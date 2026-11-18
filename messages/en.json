@@ -1,0 +1,68 @@
+{
+  "language": "Language",
+  "meta": {
+    "title": "PeSSiLi — Remote mental health",
+    "description": "Algerian on-demand platform for licensed psychologists and psychiatrists, in Arabic, French and English."
+  },
+  "brand": {
+    "home": "PeSSiLi home"
+  },
+  "auth": {
+    "signIn": "Sign in",
+    "register": "Register"
+  },
+  "cta": {
+    "consultNow": "Consult now"
+  },
+  "nav": {
+    "label": "Main navigation",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "home": "Home",
+    "doctors": "Psychologists & psychiatrists",
+    "howItWorks": "How it works",
+    "pricing": "Pricing",
+    "crisis": "Crisis help",
+    "about": "About"
+  },
+  "search": {
+    "placeholder": "Search for a clinician",
+    "submit": "Search"
+  },
+  "footer": {
+    "brandBlurb": "PeSSiLi connects people in every wilaya of Algeria with licensed remote mental health professionals.",
+    "explore": "Explore",
+    "contact": "Contact",
+    "rights": "All rights reserved"
+  },
+  "home": {
+    "heroTitle": "Licensed mental health care, anywhere in Algeria",
+    "searchPlaceholder": "Search by specialty, language or wilaya",
+    "breadcrumb": "Home",
+    "welcomeTitle": "First consultation within 24–48 hours",
+    "welcomeBody": "Pessili offers validated screening tools, video / audio / chat sessions, structured reports and secure follow-up—without travelling to a big city.",
+    "ctaPatient": "Get started as a patient",
+    "ctaFindDoctor": "Find a clinician",
+    "featuresTitle": "What you get",
+    "feature1": "Arabic/French screening (PHQ-9, GAD-7, …) with automatic scoring.",
+    "feature2": "On-demand or scheduled sessions with verified clinicians.",
+    "feature3": "Encrypted record: notes, prescriptions, PDF reports.",
+    "feature4": "Crisis protocol when risk is flagged.",
+    "coverageTitle": "National coverage",
+    "coverageBody": "Patients and doctors are mapped to wilayas for local resources and analytics.",
+    "wilayaCount": "{count} active wilayas in Appwrite.",
+    "wilayaPending": "Appwrite schema ready — run npm run appwrite:seed-wilayas."
+  },
+  "doctors": {
+    "title": "Clinicians",
+    "breadcrumb": "Clinicians",
+    "comingTitle": "Directory coming soon",
+    "comingBody": "Verified profiles will load from Appwrite (doctors collection). Register as a clinician or patient in the meantime."
+  },
+  "about": {
+    "title": "About PeSSiLi",
+    "breadcrumb": "About",
+    "missionTitle": "Mission",
+    "missionBody": "Make a first psychological or psychiatric evaluation accessible across Algeria with privacy, cultural respect and continuity of care."
+  }
+}

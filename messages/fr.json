@@ -1,0 +1,68 @@
+{
+  "language": "Langue",
+  "meta": {
+    "title": "PeSSiLi — Santé mentale à distance",
+    "description": "Plateforme algérienne de consultation psychologique et psychiatrique en ligne, dans toutes les wilayas."
+  },
+  "brand": {
+    "home": "Accueil PeSSiLi"
+  },
+  "auth": {
+    "signIn": "Connexion",
+    "register": "Inscription"
+  },
+  "cta": {
+    "consultNow": "Consulter maintenant"
+  },
+  "nav": {
+    "label": "Navigation principale",
+    "menuOpen": "Ouvrir le menu",
+    "menuClose": "Fermer le menu",
+    "home": "Accueil",
+    "doctors": "Psychologues & psychiatres",
+    "howItWorks": "Comment ça marche",
+    "pricing": "Tarifs",
+    "crisis": "Urgence",
+    "about": "À propos"
+  },
+  "search": {
+    "placeholder": "Rechercher un praticien",
+    "submit": "Rechercher"
+  },
+  "footer": {
+    "brandBlurb": "PeSSiLi rapproche les premiers entretiens de santé mentale des personnes vivant dans chaque wilaye d'Algérie.",
+    "explore": "Explorer",
+    "contact": "Contact",
+    "rights": "Tous droits réservés"
+  },
+  "home": {
+    "heroTitle": "Psychologue et psychiatre à distance, partout en Algérie",
+    "searchPlaceholder": "Rechercher par spécialité, langue ou wilaya",
+    "breadcrumb": "Accueil",
+    "welcomeTitle": "Un premier entretien en 24 à 48 h",
+    "welcomeBody": "Pessili est une plateforme entièrement à distance : questionnaires validés, consultation vidéo, audio ou chat, compte rendu structuré et suivi sécurisé. Stigmatisation et distance ne doivent plus empêcher de demander de l'aide.",
+    "ctaPatient": "Commencer en tant que patient",
+    "ctaFindDoctor": "Trouver un praticien",
+    "featuresTitle": "Ce que vous obtenez",
+    "feature1": "Dépistage (PHQ-9, GAD-7, etc.) en arabe et français, avec score automatique.",
+    "feature2": "Réservation immédiate ou planifiée avec psychologue ou psychiatre vérifié.",
+    "feature3": "Dossier médical chiffré : notes, ordonnances, comptes rendus.",
+    "feature4": "Protocole de crise si un risque est détecté.",
+    "coverageTitle": "Couverture nationale",
+    "coverageBody": "Chaque patient et chaque praticien est lié à une wilaya pour l'orientation locale et les statistiques.",
+    "wilayaCount": "{count} wilayas actives dans Appwrite.",
+    "wilayaPending": "Schéma Appwrite prêt — lancez npm run appwrite:seed-wilayas."
+  },
+  "doctors": {
+    "title": "Psychologues & psychiatres",
+    "breadcrumb": "Praticiens",
+    "comingTitle": "Annuaire bientôt disponible",
+    "comingBody": "Les profils vérifiés seront chargés depuis Appwrite (collection doctors). En attendant, inscrivez-vous comme praticien ou patient."
+  },
+  "about": {
+    "title": "À propos de PeSSiLi",
+    "breadcrumb": "À propos",
+    "missionTitle": "Mission",
+    "missionBody": "Rendre une première évaluation psychologique ou psychiatrique accessible à toute personne en Algérie, avec confidentialité, respect culturel et continuité des soins."
+  }
+}
