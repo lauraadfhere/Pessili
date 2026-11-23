@@ -1,0 +1,427 @@
+{
+  "adminNav": {
+    "label": "Modules admin",
+    "overview": "Vue d'ensemble",
+    "urgentCrisis": "Urgent & crise",
+    "clinicians": "Cliniciens",
+    "patients": "Patients",
+    "sessions": "Séances",
+    "support": "Support",
+    "content": "Contenu",
+    "finance": "Finance",
+    "partnerships": "Partenariats",
+    "compliance": "Conformité",
+    "system": "Système"
+  },
+  "adminOverview": {
+    "eyebrow": "Admin · Super Admin",
+    "title": "Vue d'ensemble",
+    "subtitle": "KPI en direct, couverture et alertes opérationnelles PeSSiLi.",
+    "kpis": {
+      "patients": "Patients",
+      "cliniciansOnline": "Cliniciens en ligne",
+      "activeSessions": "Séances actives",
+      "urgentNow": "Urgents maintenant",
+      "urgentToday": "Urgents aujourd'hui",
+      "avgTime": "Délai moyen clinicien",
+      "avgTimeUnit": "{value} min",
+      "openCrisis": "Crises ouvertes",
+      "openTickets": "Tickets ouverts",
+      "revenueToday": "Revenus du jour",
+      "dzd": "{value} DZD"
+    },
+    "alertsTitle": "Alertes opérationnelles",
+    "alerts": {
+      "coverageGap": "Trou de couverture — aucun clinicien d'astreinte pour la wilaya 23 (22:00–02:00).",
+      "licenceExpiry": "3 licences cliniciens expirent sous 14 jours — suspension auto à l'échéance.",
+      "paymentFailures": "7 échecs de paiement sur 24 h — vérifier les holds Finance."
+    },
+    "refresh": "Actualiser (démo)"
+  },
+  "adminUrgent": {
+    "eyebrow": "Crise · Opérations",
+    "title": "Urgent & crise",
+    "subtitle": "File urgente, tableau de crise, astreinte et annuaire Algérie.",
+    "queueTitle": "File urgente en direct",
+    "crisisTitle": "Tableau des alertes crise",
+    "rotaTitle": "Planning d'astreinte",
+    "resourcesTitle": "Annuaire de ressources (Algérie)",
+    "filters": {
+      "all": "Tous",
+      "waiting": "En attente",
+      "offered": "Proposé",
+      "accepted": "Accepté",
+      "missed": "Manqué"
+    },
+    "cols": {
+      "id": "ID",
+      "status": "Statut",
+      "wait": "Attente",
+      "lang": "Langue",
+      "wilaya": "Wilaya",
+      "risk": "Risque",
+      "actions": "Actions",
+      "source": "Source",
+      "severity": "Sévérité",
+      "sla": "SLA",
+      "name": "Clinicien",
+      "shift": "Vacation",
+      "backup": "Backup",
+      "phone": "Téléphone",
+      "hotline": "Ressource",
+      "number": "Numéro",
+      "region": "Région",
+      "updated": "MAJ"
+    },
+    "waitMin": "{min} min",
+    "slaSec": "{sec}s restantes",
+    "slaOk": "SLA respecté",
+    "actions": {
+      "reOffer": "Reproposer",
+      "pageOnCall": "Pager l'astreinte",
+      "callback": "Convertir en rappel",
+      "ack": "Accuser réception",
+      "escalate": "Escalader"
+    },
+    "toast": {
+      "reOffer": "Reproposé {id} au prochain clinicien (démo).",
+      "pageOnCall": "Astreinte contactée pour {id} (démo).",
+      "callback": "{id} converti en créneau de rappel (démo).",
+      "ack": "Accusé {id} (démo)."
+    },
+    "sources": {
+      "screening": "Item de dépistage",
+      "crisis_button": "Bouton crise",
+      "clinician_flag": "Signalement clinicien"
+    }
+  },
+  "adminClinicians": {
+    "eyebrow": "Conformité",
+    "title": "Cliniciens",
+    "subtitle": "File de vérification, licences et annuaire.",
+    "queueTitle": "File de vérification",
+    "licenceTitle": "Suivi des licences",
+    "directoryTitle": "Annuaire cliniciens",
+    "searchPlaceholder": "Nom, wilaya, langue…",
+    "search": "Rechercher",
+    "cols": {
+      "name": "Nom",
+      "status": "Statut",
+      "sla": "SLA",
+      "specialty": "Spécialité",
+      "actions": "Actions",
+      "expires": "Expire dans",
+      "language": "Langue",
+      "wilaya": "Wilaya",
+      "load": "Charge"
+    },
+    "slaHours": "{h} h",
+    "expiresDays": "{d} jours",
+    "actions": {
+      "approve": "Approuver",
+      "requestChanges": "Demander des changements",
+      "reject": "Rejeter"
+    },
+    "toast": {
+      "approve": "{name} approuvé(e) (démo — journalisé).",
+      "requestChanges": "Changements demandés pour {name} (démo).",
+      "reject": "{name} rejeté(e) (démo — motif requis en prod)."
+    },
+    "forceOffline": "Forcer hors ligne"
+  },
+  "adminPatients": {
+    "eyebrow": "Support · Conformité",
+    "title": "Patients (métadonnées seules)",
+    "subtitle": "Recherche par e-mail ou téléphone. Notes cliniques, réponses de dépistage et contenu de séance jamais affichés.",
+    "privacyBanner": "Métadonnées seules — pas de notes cliniques, réponses de dépistage ni contenu de séance.",
+    "lookupTitle": "Recherche patient",
+    "searchPlaceholder": "E-mail ou téléphone…",
+    "search": "Rechercher",
+    "cols": {
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "status": "Statut",
+      "wilaya": "Wilaya",
+      "subscription": "Abonnement",
+      "lastLogin": "Dernière connexion",
+      "language": "Langue",
+      "actions": "Actions"
+    },
+    "statuses": {
+      "active": "Actif",
+      "locked": "Verrouillé",
+      "unverified": "Non vérifié"
+    },
+    "actions": {
+      "unlock": "Déverrouiller",
+      "resend": "Renvoyer la vérification"
+    },
+    "toast": {
+      "unlock": "{email} déverrouillé (démo — journalisé).",
+      "resend": "Vérification renvoyée à {email} (démo)."
+    }
+  },
+  "adminSessions": {
+    "eyebrow": "Opérations",
+    "title": "Séances & opérations",
+    "subtitle": "Métadonnées live/passées, diagnostics techniques et outils de réservation.",
+    "listTitle": "Séances",
+    "diagTitle": "Diagnostics techniques",
+    "toolsTitle": "Replanifier / annuler",
+    "filters": {
+      "all": "Toutes",
+      "live": "En direct",
+      "past": "Passées"
+    },
+    "cols": {
+      "id": "ID",
+      "mode": "Mode",
+      "patient": "Patient",
+      "clinician": "Clinicien",
+      "duration": "Durée",
+      "quality": "Qualité",
+      "outcome": "Résultat",
+      "actions": "Actions"
+    },
+    "durationMin": "{min} min",
+    "dropRate": "Taux de coupure",
+    "fallback": "Usage fallback",
+    "provider": "Fournisseur vidéo",
+    "regionIssues": "Problèmes région / FAI",
+    "operational": "Opérationnel",
+    "actions": {
+      "reschedule": "Replanifier",
+      "cancel": "Annuler"
+    },
+    "toast": {
+      "reschedule": "Replanification préparée pour {id} (démo).",
+      "cancel": "Annulation + routage remboursement pour {id} (démo)."
+    },
+    "sessionIdPlaceholder": "ID de séance",
+    "reasonPlaceholder": "Motif (obligatoire)"
+  },
+  "adminSupport": {
+    "eyebrow": "Support",
+    "title": "Bureau support",
+    "subtitle": "Tickets AR/FR avec SLA, modèles et escalades.",
+    "boardTitle": "Tableau des tickets",
+    "templatesTitle": "Modèles de réponse",
+    "privacyNote": "Le support voit uniquement les métadonnées compte/technique — jamais notes cliniques ni réponses de dépistage.",
+    "filters": {
+      "all": "Tous",
+      "open": "Ouverts",
+      "assigned": "Assignés",
+      "resolved": "Résolus"
+    },
+    "cols": {
+      "id": "ID",
+      "category": "Catégorie",
+      "subject": "Sujet",
+      "status": "Statut",
+      "lang": "Langue",
+      "sla": "SLA",
+      "actions": "Escalader"
+    },
+    "slaMin": "{min} min",
+    "categories": {
+      "technical": "Technique",
+      "payment": "Paiement",
+      "account": "Compte",
+      "safety": "Sécurité",
+      "clinician_complaint": "Plainte clinicien"
+    },
+    "escalate": {
+      "crisis": "→ Crise",
+      "compliance": "→ Conformité",
+      "finance": "→ Finance"
+    },
+    "toast": {
+      "crisis": "{id} escaladé vers Crise (démo).",
+      "compliance": "{id} escaladé vers Conformité (démo).",
+      "finance": "{id} escaladé vers Finance (démo)."
+    },
+    "templates": {
+      "joinSession": "Comment rejoindre votre séance",
+      "refundAck": "Accusé de remboursement",
+      "verifyEmail": "Vérifiez votre e-mail"
+    },
+    "useTemplate": "Insérer"
+  },
+  "adminContent": {
+    "eyebrow": "Contenu",
+    "title": "Contenu & dépistage",
+    "subtitle": "Outils de dépistage, règles de risque, traductions, ancrage et CMS sensibilisation.",
+    "toolsTitle": "Bibliothèque d'outils",
+    "riskTitle": "Règles de risque",
+    "translationTitle": "Gestionnaire de traduction",
+    "groundingTitle": "Bibliothèque d'ancrage",
+    "cmsTitle": "CMS sensibilisation",
+    "cols": {
+      "name": "Outil",
+      "version": "Version",
+      "languages": "Langues",
+      "licence": "Licence",
+      "signedOff": "Validation clinique",
+      "tool": "Outil",
+      "trigger": "Déclencheur",
+      "action": "Action",
+      "key": "Clé",
+      "ar": "Arabe",
+      "fr": "Français",
+      "status": "Statut",
+      "title": "Titre",
+      "duration": "Durée",
+      "usedOn": "Utilisé sur",
+      "lang": "Langue"
+    },
+    "durationSec": "{sec}s",
+    "publish": "Soumettre (2e validation)",
+    "approveTranslation": "Approuver"
+  },
+  "adminFinance": {
+    "eyebrow": "Finance",
+    "title": "Finance",
+    "subtitle": "Revenus, paiements, holds et remboursements. Approbation payout : demandeur ≠ approbateur.",
+    "revenueTitle": "Revenus",
+    "payoutsTitle": "Paiements cliniciens",
+    "opsTitle": "Opérations paiements",
+    "metrics": {
+      "consultations": "Consultations",
+      "subscriptions": "Abonnements",
+      "institutional": "Institutionnel",
+      "payoutsPending": "Payouts en attente",
+      "failed": "Paiements échoués",
+      "holds": "Holds urgents",
+      "refunds": "Remboursements en attente",
+      "dzd": "{value} DZD"
+    },
+    "cols": {
+      "id": "ID",
+      "clinician": "Clinicien",
+      "net": "Net",
+      "requestedBy": "Demandé par",
+      "status": "Statut",
+      "actions": "Actions"
+    },
+    "segregationNote": "Le demandeur ne peut pas approuver son propre payout. La session courante doit différer de requestedBy.",
+    "approve": "Approuver le payout",
+    "hold": "Placer un hold",
+    "release": "Libérer le hold",
+    "toast": {
+      "approve": "Payout {id} approuvé (démo — ségrégation vérifiée).",
+      "blocked": "Bloqué : le demandeur ne peut pas approuver {id}.",
+      "hold": "Hold placé (démo).",
+      "release": "Hold libéré (démo)."
+    }
+  },
+  "adminPartnerships": {
+    "eyebrow": "Partenariats",
+    "title": "Partenariats",
+    "subtitle": "Institutions, listes d'éligibilité et reporting anonyme par cohorte.",
+    "institutionsTitle": "Institutions",
+    "eligibilityTitle": "Upload CSV d'éligibilité",
+    "reportingTitle": "Reporting anonyme",
+    "cols": {
+      "name": "Nom",
+      "type": "Type",
+      "members": "Membres",
+      "status": "Statut"
+    },
+    "types": {
+      "university": "Université",
+      "employer": "Employeur",
+      "ngo": "ONG"
+    },
+    "uploadHint": "Colonnes CSV : name, id, email ou phone. Statut d'invitation uniquement (Invited / Joined).",
+    "chooseFile": "Choisir un CSV",
+    "upload": "Uploader (démo)",
+    "uploadToast": "{count} lignes d'éligibilité lues (démo — non stockées).",
+    "cohortNote": "Les statistiques exigent une cohorte minimale de 10 membres. Jamais de données individuelles ou cliniques.",
+    "reportMetrics": {
+      "usage": "Usage séances",
+      "satisfaction": "Satisfaction",
+      "peak": "Pics horaires"
+    },
+    "belowCohort": "Sous le seuil de cohorte — masqué"
+  },
+  "adminCompliance": {
+    "eyebrow": "Conformité",
+    "title": "Conformité & audit",
+    "subtitle": "Versions de consentement, DSR, incidents et journal d'audit en lecture seule.",
+    "consentTitle": "Versions de consentement",
+    "dsrTitle": "File des demandes DSR",
+    "incidentsTitle": "Registre d'incidents",
+    "auditTitle": "Journal d'audit (lecture seule)",
+    "cols": {
+      "name": "Nom",
+      "version": "Version",
+      "published": "Publié",
+      "acceptances": "Acceptations",
+      "type": "Type",
+      "requester": "Demandeur",
+      "status": "Statut",
+      "due": "Échéance",
+      "title": "Titre",
+      "severity": "Sévérité",
+      "deadline": "Deadline",
+      "actor": "Acteur",
+      "action": "Action",
+      "resource": "Ressource",
+      "at": "Heure"
+    },
+    "dueDays": "{d} jours",
+    "auditImmutable": "Les journaux d'audit ne peuvent être ni modifiés ni supprimés."
+  },
+  "adminSystem": {
+    "eyebrow": "Super Admin",
+    "title": "Système",
+    "subtitle": "Rôles staff, tarifs et réglages urgents, flags, intégrations et maintenance.",
+    "staffTitle": "Staff & rôles",
+    "configTitle": "Configuration",
+    "urgentTitle": "Réglages urgents",
+    "flagsTitle": "Feature flags",
+    "integrationsTitle": "Statut des intégrations",
+    "maintenanceTitle": "Contrôle de release",
+    "cols": {
+      "name": "Nom",
+      "email": "E-mail",
+      "roles": "Rôles",
+      "mfa": "MFA",
+      "key": "Flag",
+      "enabled": "Activé",
+      "integration": "Intégration",
+      "status": "Statut"
+    },
+    "mfaOn": "Actif",
+    "mfaOff": "Inactif — reset requis",
+    "config": {
+      "plan500": "Offre 500 DZD",
+      "plan1000": "Offre 1 000 DZD",
+      "maxRequests": "Max requêtes / période",
+      "maxMinutes": "Max minutes / jour"
+    },
+    "urgent": {
+      "acceptWindow": "Fenêtre d'acceptation (s)",
+      "maxWait": "Attente max (min)",
+      "parallel": "Offres parallèles",
+      "premium": "Prime urgent (DZD)"
+    },
+    "maintenance": "Mode maintenance",
+    "maintenanceOn": "Plateforme en maintenance — bannière utilisateurs.",
+    "maintenanceOff": "Plateforme en ligne.",
+    "toggleOn": "Activer la maintenance",
+    "toggleOff": "Désactiver la maintenance",
+    "statuses": {
+      "operational": "Opérationnel",
+      "degraded": "Dégradé",
+      "down": "Hors service"
+    }
+  },
+  "adminCommon": {
+    "demo": "Démo",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "noResults": "Aucune ligne correspondante.",
+    "superAdmin": "Le Super Admin voit tous les modules"
+  }
+}

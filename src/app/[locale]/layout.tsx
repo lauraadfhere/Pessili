@@ -1,26 +1,11 @@
-import type { Metadata, Viewport } from "next";
-import { Fira_Sans, Noto_Sans_Arabic } from "next/font/google";
+import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/i18n/routing";
 import { SITE_NAME } from "@/lib/site";
 import { SITE_URL } from "@/lib/seo";
-import "../globals.css";
-
-const fira = Fira_Sans({
-  subsets: ["latin", "latin-ext"],
-  weight: ["300", "400", "500", "600", "700"],
-  variable: "--font-fira",
-  display: "swap",
-});
-
-const arabic = Noto_Sans_Arabic({
-  subsets: ["arabic"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-arabic",
-  display: "swap",
-});
+import { DocumentLocale } from "@/components/layout/DocumentLocale";
 
 type Props = {
   children: React.ReactNode;
@@ -44,8 +29,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export const viewport: Viewport = { themeColor: "#000000" };
-
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) notFound();
@@ -54,10 +37,9 @@ export default async function LocaleLayout({ children, params }: Props) {
   const messages = await getMessages();
 
   return (
-    <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"} className={`${fira.variable} ${arabic.variable}`} suppressHydrationWarning>
-      <body className="flex min-h-screen flex-col antialiased" suppressHydrationWarning>
-        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider messages={messages}>
+      <DocumentLocale locale={locale} />
+      {children}
+    </NextIntlClientProvider>
   );
 }

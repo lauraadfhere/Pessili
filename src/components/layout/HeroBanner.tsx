@@ -20,7 +20,7 @@ function HeroArt() {
 
 export function HeroBanner({ title, search }: Props) {
   return (
-    <div className="relative overflow-hidden bg-hero text-white">
+    <div className="relative overflow-hidden bg-brand text-white md:hidden">
       <HeroArt />
       <div className="relative mx-auto flex max-w-[1200px] flex-col gap-6 px-6 py-8 md:min-h-[122px] md:flex-row md:flex-wrap md:items-center md:justify-between">
         <h1 className="text-[34px] font-semibold tracking-[0.01em] [text-shadow:0_1px_3px_rgba(0,0,0,0.55)] md:text-[40px]">{title}</h1>

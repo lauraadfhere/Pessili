@@ -1,7 +1,7 @@
 /** Re-run only wilaya documents (collections must exist). */
 import { WILAYAS } from "./wilayas-data.mjs";
 
-const endpoint = (process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT || "https://cloud.appwrite.io/v1").replace(/\/$/, "");
+const endpoint = (process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT || "https://fra.cloud.appwrite.io/v1").replace(/\/$/, "");
 const projectId = process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID;
 const apiKey = process.env.APPWRITE_API_KEY;
 const databaseId = process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID || "pessili_main";

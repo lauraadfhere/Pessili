@@ -9,7 +9,7 @@ export function ConsultCta() {
   return (
     <Link
       href="/register"
-      className="inline-flex h-8 items-center bg-register px-3 text-[13px] font-semibold text-register-text hover:brightness-110"
+      className="inline-flex h-8 items-center bg-white/20 px-3 text-[13px] font-semibold text-white ring-1 ring-white/30 hover:bg-white/30"
     >
       {t("consultNow")}
     </Link>

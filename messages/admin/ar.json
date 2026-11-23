@@ -1,0 +1,427 @@
+{
+  "adminNav": {
+    "label": "وحدات الإدارة",
+    "overview": "نظرة عامة",
+    "urgentCrisis": "الطوارئ والأزمات",
+    "clinicians": "الأخصائيون",
+    "patients": "المرضى",
+    "sessions": "الجلسات",
+    "support": "الدعم",
+    "content": "المحتوى",
+    "finance": "المالية",
+    "partnerships": "الشراكات",
+    "compliance": "الامتثال",
+    "system": "النظام"
+  },
+  "adminOverview": {
+    "eyebrow": "إدارة · مشرف أعلى",
+    "title": "نظرة عامة على المنصة",
+    "subtitle": "مؤشرات مباشرة وتنبيهات التشغيل وتغطية PeSSiLi.",
+    "kpis": {
+      "patients": "المرضى",
+      "cliniciansOnline": "أخصائيون متصلون",
+      "activeSessions": "جلسات نشطة",
+      "urgentNow": "طوارئ الآن",
+      "urgentToday": "طوارئ اليوم",
+      "avgTime": "متوسط الوقت للأخصائي",
+      "avgTimeUnit": "{value} د",
+      "openCrisis": "أزمات مفتوحة",
+      "openTickets": "تذاكر مفتوحة",
+      "revenueToday": "إيراد اليوم",
+      "dzd": "{value} دج"
+    },
+    "alertsTitle": "تنبيهات تشغيلية",
+    "alerts": {
+      "coverageGap": "فجوة تغطية — لا أخصائي مناوب لولاية 23 (22:00–02:00).",
+      "licenceExpiry": "3 تراخيص تنتهي خلال 14 يوماً — تعليق تلقائي عند الانتهاء.",
+      "paymentFailures": "7 إخفاقات دفع خلال 24 ساعة — راجع حجوزات المالية."
+    },
+    "refresh": "تحديث (تجريبي)"
+  },
+  "adminUrgent": {
+    "eyebrow": "أزمات · عمليات",
+    "title": "الطوارئ والأزمات",
+    "subtitle": "طابور الطوارئ، لوحة الأزمات، جدول المناوبة ودليل موارد الجزائر.",
+    "queueTitle": "طابور الطوارئ المباشر",
+    "crisisTitle": "لوحة تنبيهات الأزمات",
+    "rotaTitle": "جدول المناوبة",
+    "resourcesTitle": "دليل الموارد (الجزائر)",
+    "filters": {
+      "all": "الكل",
+      "waiting": "انتظار",
+      "offered": "معروض",
+      "accepted": "مقبول",
+      "missed": "فائت"
+    },
+    "cols": {
+      "id": "المعرّف",
+      "status": "الحالة",
+      "wait": "الانتظار",
+      "lang": "اللغة",
+      "wilaya": "الولاية",
+      "risk": "الخطر",
+      "actions": "إجراءات",
+      "source": "المصدر",
+      "severity": "الشدة",
+      "sla": "SLA",
+      "name": "الأخصائي",
+      "shift": "الوردية",
+      "backup": "الاحتياط",
+      "phone": "الهاتف",
+      "hotline": "المورد",
+      "number": "الرقم",
+      "region": "المنطقة",
+      "updated": "تحديث"
+    },
+    "waitMin": "{min} د",
+    "slaSec": "{sec} ث متبقية",
+    "slaOk": "تم احترام SLA",
+    "actions": {
+      "reOffer": "إعادة عرض",
+      "pageOnCall": "استدعاء المناوب",
+      "callback": "تحويل لاتصال لاحق",
+      "ack": "إقرار",
+      "escalate": "تصعيد"
+    },
+    "toast": {
+      "reOffer": "أُعيد عرض {id} للأخصائي التالي (تجريبي).",
+      "pageOnCall": "تم استدعاء المناوب لـ {id} (تجريبي).",
+      "callback": "حُوّل {id} إلى موعد اتصال (تجريبي).",
+      "ack": "تم إقرار {id} (تجريبي)."
+    },
+    "sources": {
+      "screening": "عنصر فحص",
+      "crisis_button": "زر أزمة",
+      "clinician_flag": "إشارة أخصائي"
+    }
+  },
+  "adminClinicians": {
+    "eyebrow": "امتثال",
+    "title": "الأخصائيون",
+    "subtitle": "طابور التحقق ومراقبة التراخيص والدليل.",
+    "queueTitle": "طابور التحقق",
+    "licenceTitle": "مراقبة التراخيص",
+    "directoryTitle": "دليل الأخصائيين",
+    "searchPlaceholder": "الاسم، الولاية، اللغة…",
+    "search": "بحث",
+    "cols": {
+      "name": "الاسم",
+      "status": "الحالة",
+      "sla": "SLA",
+      "specialty": "التخصص",
+      "actions": "إجراءات",
+      "expires": "ينتهي خلال",
+      "language": "اللغة",
+      "wilaya": "الولاية",
+      "load": "الحمل"
+    },
+    "slaHours": "{h} س",
+    "expiresDays": "{d} يوم",
+    "actions": {
+      "approve": "موافقة",
+      "requestChanges": "طلب تعديلات",
+      "reject": "رفض"
+    },
+    "toast": {
+      "approve": "تمت الموافقة على {name} (تجريبي — مسجّل).",
+      "requestChanges": "طُلبت تعديلات لـ {name} (تجريبي).",
+      "reject": "رُفض {name} (تجريبي — السبب مطلوب في الإنتاج)."
+    },
+    "forceOffline": "فرض عدم الاتصال"
+  },
+  "adminPatients": {
+    "eyebrow": "دعم · امتثال",
+    "title": "المرضى (بيانات وصفية فقط)",
+    "subtitle": "بحث بالبريد أو الهاتف. لا تُعرض الملاحظات السريرية أو إجابات الفحص أو محتوى الجلسة.",
+    "privacyBanner": "بيانات وصفية فقط — بلا ملاحظات سريرية أو إجابات فحص أو محتوى جلسة.",
+    "lookupTitle": "بحث المريض",
+    "searchPlaceholder": "بريد أو هاتف…",
+    "search": "بحث",
+    "cols": {
+      "email": "البريد",
+      "phone": "الهاتف",
+      "status": "الحالة",
+      "wilaya": "الولاية",
+      "subscription": "الاشتراك",
+      "lastLogin": "آخر دخول",
+      "language": "اللغة",
+      "actions": "إجراءات"
+    },
+    "statuses": {
+      "active": "نشط",
+      "locked": "مقفل",
+      "unverified": "غير موثّق"
+    },
+    "actions": {
+      "unlock": "فتح القفل",
+      "resend": "إعادة إرسال التحقق"
+    },
+    "toast": {
+      "unlock": "فُتح قفل {email} (تجريبي — مسجّل).",
+      "resend": "أُعيد إرسال التحقق إلى {email} (تجريبي)."
+    }
+  },
+  "adminSessions": {
+    "eyebrow": "عمليات",
+    "title": "الجلسات والعمليات",
+    "subtitle": "بيانات وصفية مباشرة/سابقة، تشخيص تقني وأدوات الحجز.",
+    "listTitle": "الجلسات",
+    "diagTitle": "تشخيص تقني",
+    "toolsTitle": "إعادة جدولة / إلغاء",
+    "filters": {
+      "all": "الكل",
+      "live": "مباشر",
+      "past": "سابق"
+    },
+    "cols": {
+      "id": "المعرّف",
+      "mode": "الوضع",
+      "patient": "المريض",
+      "clinician": "الأخصائي",
+      "duration": "المدة",
+      "quality": "الجودة",
+      "outcome": "النتيجة",
+      "actions": "إجراءات"
+    },
+    "durationMin": "{min} د",
+    "dropRate": "معدل الانقطاع",
+    "fallback": "استخدام البديل",
+    "provider": "مزود الفيديو",
+    "regionIssues": "مشاكل المنطقة / المزود",
+    "operational": "يعمل",
+    "actions": {
+      "reschedule": "إعادة جدولة",
+      "cancel": "إلغاء"
+    },
+    "toast": {
+      "reschedule": "أُعدّت إعادة جدولة لـ {id} (تجريبي).",
+      "cancel": "بدء إلغاء + توجيه استرداد لـ {id} (تجريبي)."
+    },
+    "sessionIdPlaceholder": "معرّف الجلسة",
+    "reasonPlaceholder": "السبب (مطلوب)"
+  },
+  "adminSupport": {
+    "eyebrow": "دعم",
+    "title": "مكتب الدعم",
+    "subtitle": "تذاكر بالعربية والفرنسية مع SLA وقوالب ومسارات تصعيد.",
+    "boardTitle": "لوحة التذاكر",
+    "templatesTitle": "قوالب الرد",
+    "privacyNote": "الدعم يرى بيانات الحساب والتقنية فقط — بلا ملاحظات سريرية أو إجابات فحص.",
+    "filters": {
+      "all": "الكل",
+      "open": "مفتوحة",
+      "assigned": "مُسندة",
+      "resolved": "محلولة"
+    },
+    "cols": {
+      "id": "المعرّف",
+      "category": "الفئة",
+      "subject": "الموضوع",
+      "status": "الحالة",
+      "lang": "اللغة",
+      "sla": "SLA",
+      "actions": "تصعيد"
+    },
+    "slaMin": "{min} د",
+    "categories": {
+      "technical": "تقني",
+      "payment": "دفع",
+      "account": "حساب",
+      "safety": "سلامة",
+      "clinician_complaint": "شكوى أخصائي"
+    },
+    "escalate": {
+      "crisis": "→ أزمات",
+      "compliance": "→ امتثال",
+      "finance": "→ مالية"
+    },
+    "toast": {
+      "crisis": "صُعّد {id} إلى الأزمات (تجريبي).",
+      "compliance": "صُعّد {id} إلى الامتثال (تجريبي).",
+      "finance": "صُعّد {id} إلى المالية (تجريبي)."
+    },
+    "templates": {
+      "joinSession": "كيفية الانضمام للجلسة",
+      "refundAck": "إقرار استرداد",
+      "verifyEmail": "تأكيد بريدك"
+    },
+    "useTemplate": "إدراج"
+  },
+  "adminContent": {
+    "eyebrow": "محتوى",
+    "title": "المحتوى والفحص",
+    "subtitle": "أدوات الفحص، قواعد الخطر، الترجمة، مكتبات التهدئة وCMS التوعية.",
+    "toolsTitle": "مكتبة أدوات الفحص",
+    "riskTitle": "قواعد الخطر",
+    "translationTitle": "مدير الترجمة",
+    "groundingTitle": "مكتبة التهدئة والمساعدة الذاتية",
+    "cmsTitle": "CMS التوعية",
+    "cols": {
+      "name": "الأداة",
+      "version": "الإصدار",
+      "languages": "اللغات",
+      "licence": "الترخيص",
+      "signedOff": "اعتماد سريري",
+      "tool": "الأداة",
+      "trigger": "المحفّز",
+      "action": "الإجراء",
+      "key": "المفتاح",
+      "ar": "العربية",
+      "fr": "الفرنسية",
+      "status": "الحالة",
+      "title": "العنوان",
+      "duration": "المدة",
+      "usedOn": "يُستخدم في",
+      "lang": "اللغة"
+    },
+    "durationSec": "{sec} ث",
+    "publish": "إرسال لموافقة ثانية",
+    "approveTranslation": "موافقة"
+  },
+  "adminFinance": {
+    "eyebrow": "مالية",
+    "title": "المالية",
+    "subtitle": "الإيرادات والمدفوعات والحجوزات والاستردادات. موافقة الدفع: الطالب ≠ الموافق.",
+    "revenueTitle": "الإيرادات",
+    "payoutsTitle": "مدفوعات الأخصائيين",
+    "opsTitle": "عمليات الدفع",
+    "metrics": {
+      "consultations": "استشارات",
+      "subscriptions": "اشتراكات",
+      "institutional": "مؤسسي",
+      "payoutsPending": "مدفوعات معلّقة",
+      "failed": "مدفوعات فاشلة",
+      "holds": "حجوزات طارئة",
+      "refunds": "استردادات معلّقة",
+      "dzd": "{value} دج"
+    },
+    "cols": {
+      "id": "المعرّف",
+      "clinician": "الأخصائي",
+      "net": "الصافي",
+      "requestedBy": "طلب بواسطة",
+      "status": "الحالة",
+      "actions": "إجراءات"
+    },
+    "segregationNote": "لا يمكن للطالب الموافقة على دفعه. يجب أن تختلف الجلسة الحالية عن requestedBy.",
+    "approve": "الموافقة على الدفع",
+    "hold": "وضع حجز",
+    "release": "تحرير الحجز",
+    "toast": {
+      "approve": "وُوفق على الدفع {id} (تجريبي — فُحص الفصل).",
+      "blocked": "محظور: الطالب لا يمكنه الموافقة على {id}.",
+      "hold": "وُضع حجز (تجريبي).",
+      "release": "حُرّر الحجز (تجريبي)."
+    }
+  },
+  "adminPartnerships": {
+    "eyebrow": "شراكات",
+    "title": "الشراكات",
+    "subtitle": "المؤسسات وقوائم الأهلية والتقارير المجهولة حسب المجموعة.",
+    "institutionsTitle": "المؤسسات",
+    "eligibilityTitle": "رفع CSV للأهلية",
+    "reportingTitle": "تقارير مجهولة",
+    "cols": {
+      "name": "الاسم",
+      "type": "النوع",
+      "members": "الأعضاء",
+      "status": "الحالة"
+    },
+    "types": {
+      "university": "جامعة",
+      "employer": "صاحب عمل",
+      "ngo": "منظمة"
+    },
+    "uploadHint": "أعمدة CSV: name و id و email أو phone. حالة الدعوة فقط (Invited / Joined).",
+    "chooseFile": "اختر CSV",
+    "upload": "رفع (تجريبي)",
+    "uploadToast": "قُرئت {count} صفوف أهلية (تجريبي — غير مخزّنة).",
+    "cohortNote": "الإحصاءات تتطلب مجموعة لا تقل عن 10 أعضاء. لا بيانات فردية أو سريرية.",
+    "reportMetrics": {
+      "usage": "استخدام الجلسات",
+      "satisfaction": "الرضا",
+      "peak": "أوقات الذروة"
+    },
+    "belowCohort": "أقل من الحد الأدنى — مخفي"
+  },
+  "adminCompliance": {
+    "eyebrow": "امتثال",
+    "title": "الامتثال والتدقيق",
+    "subtitle": "إصدارات الموافقة وطلبات البيانات والحوادث وسجل تدقيق للقراءة فقط.",
+    "consentTitle": "إصدارات الموافقة",
+    "dsrTitle": "طابور طلبات البيانات",
+    "incidentsTitle": "سجل الحوادث",
+    "auditTitle": "سجل التدقيق (قراءة فقط)",
+    "cols": {
+      "name": "الاسم",
+      "version": "الإصدار",
+      "published": "نُشر",
+      "acceptances": "القبول",
+      "type": "النوع",
+      "requester": "مقدّم الطلب",
+      "status": "الحالة",
+      "due": "الاستحقاق",
+      "title": "العنوان",
+      "severity": "الشدة",
+      "deadline": "الموعد",
+      "actor": "الفاعل",
+      "action": "الإجراء",
+      "resource": "المورد",
+      "at": "الوقت"
+    },
+    "dueDays": "{d} يوم",
+    "auditImmutable": "لا يمكن تعديل أو حذف سجلات التدقيق."
+  },
+  "adminSystem": {
+    "eyebrow": "مشرف أعلى",
+    "title": "النظام",
+    "subtitle": "أدوار الموظفين والإعدادات والعلامات والتكاملات والصيانة.",
+    "staffTitle": "الموظفون والأدوار",
+    "configTitle": "الإعدادات",
+    "urgentTitle": "إعدادات الطوارئ",
+    "flagsTitle": "علامات الميزات",
+    "integrationsTitle": "حالة التكاملات",
+    "maintenanceTitle": "التحكم بالإصدار",
+    "cols": {
+      "name": "الاسم",
+      "email": "البريد",
+      "roles": "الأدوار",
+      "mfa": "MFA",
+      "key": "العلامة",
+      "enabled": "مفعّل",
+      "integration": "التكامل",
+      "status": "الحالة"
+    },
+    "mfaOn": "مفعّل",
+    "mfaOff": "معطّل — يلزم إعادة ضبط",
+    "config": {
+      "plan500": "باقة 500 دج",
+      "plan1000": "باقة 1000 دج",
+      "maxRequests": "أقصى طلبات / الفترة",
+      "maxMinutes": "أقصى دقائق / يوم"
+    },
+    "urgent": {
+      "acceptWindow": "نافذة القبول (ث)",
+      "maxWait": "أقصى انتظار (د)",
+      "parallel": "عروض متوازية",
+      "premium": "علاوة طوارئ (دج)"
+    },
+    "maintenance": "وضع الصيانة",
+    "maintenanceOn": "المنصة في صيانة — يظهر شريط للمستخدمين.",
+    "maintenanceOff": "المنصة متاحة.",
+    "toggleOn": "تفعيل الصيانة",
+    "toggleOff": "إيقاف الصيانة",
+    "statuses": {
+      "operational": "يعمل",
+      "degraded": "متدهور",
+      "down": "متوقف"
+    }
+  },
+  "adminCommon": {
+    "demo": "تجريبي",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "noResults": "لا صفوف مطابقة.",
+    "superAdmin": "المشرف الأعلى يرى كل الوحدات"
+  }
+}

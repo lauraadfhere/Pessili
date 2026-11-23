@@ -1,7 +1,7 @@
-import { Client, Databases, ID, Query } from "appwrite";
+import { Client, Query, TablesDB } from "appwrite";
 
-export function getAppwriteServer() {
-  const endpoint = process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT ?? "https://cloud.appwrite.io/v1";
+export function getTablesServer(): TablesDB | null {
+  const endpoint = process.env.NEXT_PUBLIC_APPWRITE_ENDPOINT ?? "https://fra.cloud.appwrite.io/v1";
   const projectId = process.env.NEXT_PUBLIC_APPWRITE_PROJECT_ID ?? "";
   const apiKey = process.env.APPWRITE_API_KEY;
 
@@ -9,20 +9,24 @@ export function getAppwriteServer() {
 
   const client = new Client().setEndpoint(endpoint).setProject(projectId);
   client.headers["X-Appwrite-Key"] = apiKey;
-  return new Databases(client);
+  return new TablesDB(client);
 }
 
 export async function getActiveWilayas() {
-  const db = getAppwriteServer();
-  const databaseId = process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID ?? "pessili_main";
-  if (!db) return [];
+  const tables = getTablesServer();
+  const databaseId = process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID ?? "6afde2120005bf2a9749";
+  if (!tables) return [];
 
   try {
-    const res = await db.listDocuments(databaseId, "wilayas", [Query.equal("active", true), Query.orderAsc("code"), Query.limit(100)]);
-    return res.documents;
+    const res = await tables.listRows({
+      databaseId,
+      tableId: "wilayas",
+      queries: [Query.equal("active", true), Query.orderAsc("code"), Query.limit(100)],
+    });
+    return res.rows;
   } catch {
     return [];
   }
 }
 
-export { ID, Query };
+export { Query };

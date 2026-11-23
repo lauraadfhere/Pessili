@@ -1,13 +1,15 @@
 import { getLogoSettings } from "@/lib/logo";
 import type { NavKey } from "@/lib/nav";
-import { SiteHeader } from "@/components/layout/SiteHeader";
-import { HeroBanner } from "@/components/layout/HeroBanner";
+import { SiteChrome } from "@/components/layout/SiteChrome";
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
 import { SiteFooter } from "@/components/layout/SiteFooter";
+import { FeedbackTab } from "@/components/layout/FeedbackTab";
+import { ScrollControls } from "@/components/layout/ScrollControls";
+import { CookieConsent } from "@/components/layout/CookieConsent";
 
 type Props = {
   active?: NavKey;
-  hero?: React.ComponentProps<typeof HeroBanner>;
+  hero?: { title: string; search?: { action: string; placeholder: string } };
   breadcrumbs: React.ComponentProps<typeof Breadcrumbs>["items"];
   flush?: boolean;
   children: React.ReactNode;
@@ -18,11 +20,13 @@ export async function PageShell({ active, hero, breadcrumbs, flush = false, chil
 
   return (
     <>
-      <SiteHeader active={active} logo={logo} />
-      {hero && <HeroBanner {...hero} />}
+      <SiteChrome active={active} logo={logo} hero={hero} />
       <Breadcrumbs items={breadcrumbs} />
       <main className={`flex-1 ${flush ? "" : "pb-12"}`}>{children}</main>
       <SiteFooter logo={logo} />
+      <FeedbackTab />
+      <ScrollControls />
+      <CookieConsent />
     </>
   );
 }

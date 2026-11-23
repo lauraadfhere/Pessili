@@ -7,9 +7,19 @@ export function SectionTitle({ children, className = "" }: { children: React.Rea
   );
 }
 
-export function Panel({ title, children, className = "" }: { title: React.ReactNode; children: React.ReactNode; className?: string }) {
+export function Panel({
+  title,
+  children,
+  className = "",
+  id,
+}: {
+  title: React.ReactNode;
+  children: React.ReactNode;
+  className?: string;
+  id?: string;
+}) {
   return (
-    <section className={`bg-panel ${className}`}>
+    <section id={id} className={`bg-panel ${className}`}>
       <div className="bg-panel-head px-3 py-2.5">
         <SectionTitle>{title}</SectionTitle>
       </div>

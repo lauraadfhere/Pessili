@@ -23,6 +23,7 @@ export default async function HomePage({ params }: Props) {
   return (
     <PageShell
       active="home"
+      flush
       hero={{
         title: t("heroTitle"),
         search: { action: `/${locale}/doctors`, placeholder: t("searchPlaceholder") },

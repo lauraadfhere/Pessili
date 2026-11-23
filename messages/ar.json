@@ -9,7 +9,104 @@
   },
   "auth": {
     "signIn": "تسجيل الدخول",
-    "register": "إنشاء حساب"
+    "register": "إنشاء حساب",
+    "signOut": "تسجيل الخروج"
+  },
+  "loading": "جاري التحميل…",
+  "feedback": "ملاحظات",
+  "language": "اللغة",
+  "breadcrumb": {
+    "home": "الرئيسية"
+  },
+  "scroll": {
+    "top": "أعلى الصفحة",
+    "bottom": "أسفل الصفحة"
+  },
+  "cookies": {
+    "title": "نستخدم ملفات تعريف الارتباط.",
+    "body": "هي ضرورية للغة والدخول والتفضيلات. يمكنك رفض الاختيارية أو قبول الكل وتغيير اختيارك لاحقاً.",
+    "reject": "رفض",
+    "settings": "إعدادات",
+    "acceptAll": "قبول الكل",
+    "termsLink": "الشروط",
+    "privacyLink": "الخصوصية",
+    "closeOverlay": "إغلاق",
+    "openSettings": "ملفات الارتباط"
+  },
+  "login": {
+    "heroTitle": "تسجيل الدخول",
+    "panelTitle": "حساب PeSSiLi",
+    "formHeading": "بيانات الدخول",
+    "email": "البريد",
+    "emailPlaceholder": "you@example.dz",
+    "password": "كلمة المرور",
+    "submit": "دخول",
+    "submitting": "جاري الدخول…",
+    "genericError": "بريد أو كلمة مرور غير صحيحة.",
+    "asideTitle": "وصول تجريبي",
+    "asideBody": "اضغط أيقونة ℹ️ لعرض حسابات المريض والمختص والمسؤول. هذه جلسة محلية حتى ربط Appwrite Auth.",
+    "demoToggle": "عرض حسابات التجربة",
+    "demoTitle": "حسابات تجريبية",
+    "demoHint": "انقر «استخدام» لملء النموذج.",
+    "demoUse": "استخدام",
+    "demoRoles": {
+      "patient": "مريض",
+      "doctor": "مختص",
+      "admin": "مسؤول"
+    }
+  },
+  "dashboard": {
+    "title": "لوحة التحكم",
+    "breadcrumb": "لوحة التحكم",
+    "welcome": "متصل كـ {role}",
+    "body": "مساحة تجريبية — استبدلها بـ Appwrite Auth للإنتاج.",
+    "roles": {
+      "patient": "مريض",
+      "doctor": "مختص",
+      "admin": "مسؤول"
+    },
+    "marksTitle": "إرسال تقييم سريري",
+    "marksBody": "أدخل بريد المريض أو الرقم التسلسلي والدرجة (1–10). يُنشأ ملخص ذكاء اصطناعي في إشعارات المريض.",
+    "cloudUploadTitle": "رفع PDF / صورة للمريض",
+    "cloudUploadBody": "تخزين على Cloudinary (مصادق). يفتح المريض الملف في المتصفح برمز PeSSiLi."
+  },
+  "doctorDocuments": {
+    "patientEmail": "بريد المريض",
+    "patientSerial": "رقم المريض PeSSiLi",
+    "title": "عنوان الوثيقة",
+    "file": "PDF أو صورة",
+    "upload": "رفع إلى Cloudinary",
+    "uploading": "جاري الرفع…",
+    "saved": "تم الحفظ — يفتح المريض برمزه.",
+    "error": "فشل الرفع"
+  },
+  "doctorMarks": {
+    "patientEmail": "بريد المريض",
+    "patientSerial": "الرقم التسلسلي (تحقق)",
+    "score": "الدرجة / {max}",
+    "note": "ملاحظة سريرية",
+    "submit": "إرسال التقييم",
+    "saving": "جاري الإرسال…",
+    "saved": "تم إرسال التقييم للمريض.",
+    "error": "تعذّر الحفظ."
+  },
+  "patientMarks": {
+    "title": "تقييمات الأطباء والذكاء الاصطناعي",
+    "empty": "لا تقييمات بعد."
+  },
+  "feedbackPage": {
+    "title": "ملاحظاتكم",
+    "breadcrumb": "ملاحظات",
+    "panelTitle": "راسلونا",
+    "body": "نموذج الملاحظات قريباً. راسلونا على contact@pessili.dz."
+  },
+  "legal": {
+    "privacyTitle": "الخصوصية",
+    "privacyBreadcrumb": "الخصوصية",
+    "privacyBody": "إشعار مؤقت — أتمِموا الامتثال للقانون 18-07 مع مستشاركم.",
+    "termsTitle": "شروط الاستخدام",
+    "termsBreadcrumb": "الشروط",
+    "termsBody": "نص مؤقت لإطلاق تجريبي PeSSiLi."
   },
   "cta": {
     "consultNow": "استشر الآن"
@@ -56,13 +153,253 @@
   "doctors": {
     "title": "أخصائيون وأطباء",
     "breadcrumb": "المختصون",
-    "comingTitle": "الدليل قريباً",
-    "comingBody": "ستُحمّل الملفات الموثّقة من Appwrite (مجموعة doctors). يمكنك التسجيل كمختص أو مريض في هذه الأثناء."
+    "searchResults": "نتائج « {query} »"
+  },
+  "howItWorks": {
+    "title": "كيف تعمل المنصة",
+    "breadcrumb": "المسار",
+    "stepsTitle": "مسار المريض",
+    "step1": "التسجيل (بريد أو هاتف OTP) واختيار الولاية.",
+    "step2": "استبيانات مع تسجيل تلقائي للنتائج.",
+    "step3": "الربط مع أخصائي أو طبيب نفسي.",
+    "step4": "جلسة فيديو أو صوت أو محادثة.",
+    "step5": "تقرير، دفع وتذكيرات المتابعة."
+  },
+  "pricing": {
+    "title": "الأسعار",
+    "breadcrumb": "الأسعار",
+    "panelTitle": "أسعار محلية",
+    "body": "يحدد كل مختص موثّق أجره بالدينار. قد تُعرض جلسة أولى مخفّضة في التجربة التجريبية."
+  },
+  "crisis": {
+    "title": "مساعدة طارئة",
+    "breadcrumb": "طوارئ",
+    "urgentTitle": "إذا كنت في خطر مباشر",
+    "urgentBody": "اتصل بخدمات الطوارئ الرسمية في ولايتك. PeSSiLi ليست خط طوارئ؛ ستُعرض الأرقام المحلية بعد المراجعة القانونية.",
+    "disclaimerTitle": "تنبيه",
+    "disclaimerBody": "الاستبيانات قد تشير لخطر؛ التقييم الحقيقي من مختص مرخّص فقط."
+  },
+  "authPages": {
+    "loginTitle": "تسجيل الدخول",
+    "loginBreadcrumb": "دخول",
+    "loginPanel": "مصادقة Appwrite",
+    "loginBody": "سيتم ربط دخول المريض/المختص (بريد، OTP، أدوار) مع Appwrite Auth في مرحلة MVP التالية.",
+    "registerTitle": "إنشاء حساب",
+    "registerBreadcrumb": "تسجيل",
+    "registerPanel": "حساب جديد",
+    "registerBody": "اختر دور المريض أو المختص، الولاية واللغة — تُحفظ في مجموعة profiles."
   },
   "about": {
     "title": "عن PeSSiLi",
     "breadcrumb": "من نحن",
     "missionTitle": "المهمة",
     "missionBody": "جعل التقييم النفسي أو الطب النفسي الأول متاحاً في كل الجزائر باحترام وخصوصية واستمرارية للرعاية."
+  },
+  "patientNav": {
+    "label": "مساحة المريض",
+    "greeting": "مرحباً {name}",
+    "dashboard": "اللوحة",
+    "talkNow": "تحدث الآن",
+    "profile": "الملف",
+    "screening": "الفحص",
+    "sessions": "الجلسات",
+    "records": "السجل",
+    "cases": "ملفاتي",
+    "booking": "موعد",
+    "messages": "الرسائل",
+    "payments": "المدفوعات",
+    "guardian": "الوصي",
+    "settings": "الإعدادات",
+    "crisis": "طوارئ",
+    "publicSite": "الموقع العام",
+    "search": "بحث",
+    "searchPlaceholder": "الاسم، الولاية، اللغة…",
+    "searchSubmit": "بحث",
+    "notifications": "إشعارات",
+    "notificationsEmpty": "لا إشعارات حالياً.",
+    "welcomeNotifTitle": "مرحباً بك في PeSSiLi",
+    "welcomeNotifBody": "أكمل ملفك وتصفح المختصين الموثّقين.",
+    "viewCases": "عرض ملفاتي",
+    "viewMessages": "مركز الرسائل",
+    "aiTitle": "رؤية PeSSiLi الذكية",
+    "moreMenu": "المزيد",
+    "myProfile": "ملفي"
+  },
+  "patientDashboard": {
+    "eyebrow": "مساحة المريض · الجزائر",
+    "title": "رحلتك نحو الصحة النفسية",
+    "subtitle": "استشارة عن بُعد، استبيانات معتمدة ومتابعة في 69 ولاية.",
+    "journeyTitle": "المسار المعتاد",
+    "journey": {
+      "step1": "أكمل ملفك والولاية.",
+      "step2": "أنجز فحص PHQ-9 / GAD-7 بالعربية أو الفرنسية.",
+      "step3": "احجز أو ابدأ جلسة مع مختص موثّق.",
+      "step4": "استلم التقرير وخطة الرعاية والتذكيرات."
+    },
+    "cards": {
+      "open": "فتح",
+      "talkNow": { "title": "تحدث مع شخص الآن", "desc": "فرز عاجل لمختص متاح عند الطلب.", "stat": "دقائق" },
+      "sessions": { "title": "الجلسات", "desc": "القادمة والسابقة والفائتة مع قائمة تجهيز الانضمام.", "stat": "توقيت الجزائر" },
+      "payments": { "title": "المدفوعات", "desc": "استشارة، اشتراك، محفظة وفواتير.", "stat": "دج" },
+      "consult": { "title": "استشارة", "desc": "فيديو أو صوت أو محادثة — فوراً أو بموعد.", "stat": "24–48 س" },
+      "screening": { "title": "الاستبيانات", "desc": "PHQ-9 و GAD-7 مع تسجيل تلقائي.", "stat": "15 د" },
+      "cases": {
+        "title": "الملفات والحالات",
+        "desc": "قدّم حالتك وتابع الحالة وتحديثات الوثائق لحظياً.",
+        "stat": "متابعة نشطة",
+        "openCount": "{count} قيد المعالجة"
+      },
+      "serial": { "title": "رقم المريض", "desc": "أعطِ هذا الرقم للطبيب عند كل تواصل." },
+      "messages": { "title": "الرسائل", "desc": "قناة آمنة عندما يتواصل معك مختص.", "stat": "لا جديد", "unread": "{count} غير مقروء" },
+      "records": { "title": "ملفات PDF", "desc": "تقارير ووصفات قابلة للتنزيل.", "stat": "PDF مشفّر" }
+    }
+  },
+  "patientCases": {
+    "pageTitle": "ملفاتي وحالاتي",
+    "pageSubtitle": "متابعة مباشرة لطلباتك وتحديثات السجل.",
+    "newPageTitle": "تقديم حالة",
+    "newPageSubtitle": "صف وضعك؛ ستراجعه فرقتنا بعد الإرسال.",
+    "trackerTitle": "متابعة الحالات",
+    "formTitle": "طلب جديد",
+    "caseTitle": "عنوان الحالة",
+    "caseTitlePlaceholder": "مثال: قلق مستمر، حاجة لتقييم",
+    "caseBody": "التفاصيل",
+    "caseBodyPlaceholder": "الأعراض، السياق، الوثائق المتوفرة…",
+    "submit": "إرسال الحالة",
+    "submitting": "جاري الإرسال…",
+    "submitError": "تعذّر حفظ الحالة.",
+    "loading": "جاري تحميل المتابعة…",
+    "empty": "لا توجد حالات بعد. أرسل طلباً لبدء المتابعة.",
+    "newCase": "حالة جديدة",
+    "tracking": "متابعة",
+    "liveOn": "لحظي",
+    "livePoll": "تحديث تلقائي",
+    "lastSync": "آخر مزامنة",
+    "updated": "آخر تحديث",
+    "timeline": "تقدّم الحالة",
+    "status": {
+      "submitted": "مستلم",
+      "triage": "فرز",
+      "assigned": "مُعيَّن",
+      "in_consultation": "استشارة جارية",
+      "report_ready": "التقرير جاهز",
+      "closed": "مغلق"
+    },
+    "editor": {
+      "bold": "عريض",
+      "italic": "مائل",
+      "underline": "تسطير",
+      "list": "قائمة",
+      "hint": "تنسيق بسيط — يُخزَّن بأمان."
+    }
+  },
+  "patientProfile": {
+    "pageTitle": "ملفي",
+    "pageSubtitle": "الصورة، الرقم التسلسلي، التاريخ ودخول سريع عبر QR.",
+    "identitySection": "الهوية",
+    "serialTitle": "الرقم التسلسلي PeSSiLi",
+    "serialHint": "انسخ هذا الرقم وأرسله للطبيب عند التحدث معه.",
+    "serialCopy": "نسخ",
+    "serialCopied": "تم النسخ",
+    "formSection": "البيانات الشخصية",
+    "qrSection": "دخول سريع (QR)",
+    "fullName": "الاسم الكامل",
+    "nickname": "اللقب (اختياري)",
+    "phone": "الهاتف",
+    "birthYear": "سنة الميلاد",
+    "wilaya": "الولاية",
+    "wilayaPlaceholder": "اختر…",
+    "conditions": "أمراض / متابعات معروفة",
+    "conditionsHint": "افصل بفواصل.",
+    "medicalHistory": "التاريخ الطبي والنفسي",
+    "medicalHistoryPlaceholder": "علاجات سابقة، متابعة حالية…",
+    "gender": "الجنس (اختياري)",
+    "avatarUrl": "رابط صورة الملف",
+    "save": "حفظ الملف",
+    "saving": "جاري الحفظ…",
+    "saved": "تم الحفظ في Appwrite.",
+    "saveError": "تعذّر الحفظ.",
+    "qrTitle": "رمز QR للدخول",
+    "qrBody": "امسح من هاتفك لتسجيل الدخول بسرعة (تجريبي).",
+    "qrPending": "احفظ ملفك لتوليد QR.",
+    "qrLoading": "جاري التوليد…",
+    "qrFull": "رمز QR كامل في الملف"
+  },
+  "patientScreening": { "title": "الفحص", "body": "أدوات بالعربية والفرنسية — ربط بجدول الاستبيانات قريباً.", "phq": "الاكتئاب (PHQ-9)", "gad": "القلق (GAD-7)", "soon": "قريباً" },
+  "patientMessages": {
+    "pageTitle": "الرسائل",
+    "pageSubtitle": "محادثات مع الأطباء عند تواصلهم معك.",
+    "inboxTitle": "مركز الرسائل",
+    "inboxHint": "تظهر رسائل الطبيب هنا مع تحديث تلقائي. أجب لتأكيد موعد أو طرح سؤال.",
+    "crisisBanner": {
+      "title": "الرسائل ليست للطوارئ",
+      "body": "إن كنت في خطر أو تحتاج مساعدة فورية، استخدم موارد الأزمة أو تحدث الآن.",
+      "crisis": "مساعدة الأزمة",
+      "talkNow": "تحدث الآن"
+    },
+    "loading": "جاري التحميل…",
+    "empty": "لا رسائل بعد.",
+    "you": "أنت",
+    "replyLabel": "ردك",
+    "replyPlaceholder": "اكتب للمختص…",
+    "send": "إرسال",
+    "sending": "جاري الإرسال…"
+  },
+  "patientRecords": {
+    "title": "السجل",
+    "subtitle": "التاريخ ووثائق PDF للاستشارات.",
+    "historyTitle": "التاريخ الطبي",
+    "empty": "أكمل ملفك لحفظ التاريخ.",
+    "pdfTitle": "وثائق PDF",
+    "pdfHint": "أدخل رمز المريض PeSSiLi لفتح كل PDF.",
+    "cloudTitle": "وثائق سحابية آمنة",
+    "cloudHint": "صور وPDF من الأطباء (Cloudinary). الرمز مطلوب للخصوصية.",
+    "cloudEmpty": "لا ملفات بعد. أضف Cloudinary ثم اطلب رفعاً من الطبيب.",
+    "accessCodeLabel": "رمز وصول المريض",
+    "accessCodeHint": "نفس الرقم في الملف (PSL-…).",
+    "accessCodeShort": "رمز PSL",
+    "codeRequired": "أدخل الرمز أولاً.",
+    "viewSecure": "فتح",
+    "gate": {
+      "code_required": "الرمز مطلوب.",
+      "code_mismatch": "رمز غير صحيح.",
+      "sign_in_required": "سجّل الدخول.",
+      "denied": "مرفوض.",
+      "forbidden": "غير مسموح.",
+      "invalid_format": "تنسيق غير صالح."
+    },
+    "pdfDownload": "تنزيل PDF",
+    "pdf": {
+      "summary": "ملخص السجل",
+      "consultReport": "تقرير الاستشارة",
+      "prescription": "وصفة"
+    }
+  },
+  "patientBooking": {
+    "title": "حجز استشارة",
+    "body": "كل المختصين الموثّقين في مكان واحد حسب التخصص.",
+    "findDoctor": "تصفح المختصين",
+    "searchResults": "نتائج « {query} »"
+  },
+  "patientDoctors": {
+    "directoryTitle": "الدليل",
+    "empty": "لا يوجد مختصون حالياً.",
+    "noResults": "لا نتائج. جرّب كلمة أخرى.",
+    "wilaya": "ولاية {code}",
+    "verified": "موثّق",
+    "price": "{amount} دج",
+    "onDemand": "متاح الآن",
+    "byAppointment": "بموعد",
+    "rating": "تقييم {value}/5",
+    "categories": {
+      "psychologist": "أخصائيو نفس",
+      "psychiatrist": "أطباء نفس",
+      "child_psychologist": "الأطفال والمراهقون"
+    },
+    "categoryDesc": {
+      "psychologist": "علاج نفسي، TCC ومرافقة.",
+      "psychiatrist": "تقييم طبي، علاج، استشارة عن بُعد.",
+      "child_psychologist": "طب نفس الأطفال والمراهقين."
+    }
   }
 }

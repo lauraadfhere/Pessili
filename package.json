@@ -7,24 +7,42 @@
     "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
-    "appwrite:setup": "node --env-file=.env.local scripts/setup-appwrite.mjs",
-    "appwrite:seed-wilayas": "node --env-file=.env.local scripts/seed-wilayas.mjs"
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv",
+    "appwrite:setup": "node --env-file=.env.local scripts/setup-tablesdb.mjs",
+    "appwrite:setup-legacy": "node --env-file=.env.local scripts/setup-appwrite.mjs",
+    "appwrite:seed-wilayas": "node --env-file=.env.local scripts/seed-wilayas.mjs",
+    "appwrite:profile-columns": "node --env-file=.env.local scripts/add-profile-columns.mjs",
+    "appwrite:patient-cases": "node --env-file=.env.local scripts/add-patient-cases-table.mjs",
+    "appwrite:patient-messages": "node --env-file=.env.local scripts/add-patient-messages-table.mjs",
+    "appwrite:patient-marks": "node --env-file=.env.local scripts/add-patient-marks-table.mjs",
+    "appwrite:patient-media": "node --env-file=.env.local scripts/add-patient-media-table.mjs",
+    "cloudinary:test": "node --env-file=.env.local scripts/test-cloudinary.mjs",
+    "cloudinary:upload-pdf": "node --env-file=.env.local scripts/upload-test-pdf.mjs",
+    "cloudinary:seed-demo": "node --env-file=.env.local scripts/seed-patient-media-demo.mjs"
   },
   "dependencies": {
     "appwrite": "^21.0.0",
+    "cloudinary": "^2.11.0",
     "next": "16.4.6",
     "next-intl": "^4.15.1",
+    "qrcode": "^1.5.4",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.20.18",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/qrcode": "^1.5.6",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.4.6",
+    "node-appwrite": "^32.0.0",
     "tailwindcss": "4.3.3",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^4.166.0"
   }
 }

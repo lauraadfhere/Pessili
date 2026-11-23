@@ -23,8 +23,8 @@ export function SiteFooter({ logo = DEFAULT_LOGO_SETTINGS }: { logo?: LogoSettin
           </Link>
           <p className="mt-4 text-[12px] leading-relaxed text-white/75">{t("footer.brandBlurb")}</p>
         </div>
-        <motionList title={t("footer.explore")} navItems={navItems} t={t} />
-        <motionContact t={t} />
+        <FooterNavList title={t("footer.explore")} navItems={navItems} t={t} />
+        <FooterContact t={t} />
       </div>
       <div className="border-t border-footer-line px-6 py-4 text-center text-[11px] text-white/60">
         © {new Date().getFullYear()} PeSSiLi — {t("footer.rights")}
@@ -33,7 +33,7 @@ export function SiteFooter({ logo = DEFAULT_LOGO_SETTINGS }: { logo?: LogoSettin
   );
 }
 
-function motionList({ title, navItems, t }: { title: string; navItems: typeof NAV; t: ReturnType<typeof useTranslations> }) {
+function FooterNavList({ title, navItems, t }: { title: string; navItems: typeof NAV; t: ReturnType<typeof useTranslations> }) {
   return (
     <div>
       <h2 className="mb-3 text-[13px] font-bold">{title}</h2>
@@ -50,7 +50,7 @@ function motionList({ title, navItems, t }: { title: string; navItems: typeof NA
   );
 }
 
-function motionContact({ t }: { t: ReturnType<typeof useTranslations> }) {
+function FooterContact({ t }: { t: ReturnType<typeof useTranslations> }) {
   return (
     <div>
       <h2 className="mb-3 text-[13px] font-bold">{t("footer.contact")}</h2>

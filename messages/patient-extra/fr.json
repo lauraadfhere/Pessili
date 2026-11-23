@@ -1,0 +1,324 @@
+{
+  "patientNav": {
+    "talkNow": "Parler maintenant",
+    "sessions": "Séances",
+    "payments": "Paiements",
+    "guardian": "Tuteur",
+    "settings": "Paramètres"
+  },
+  "patientDashboard": {
+    "cards": {
+      "talkNow": {
+        "title": "Parler à quelqu’un maintenant",
+        "desc": "Triage urgent pour un praticien disponible à la demande.",
+        "stat": "Minutes"
+      },
+      "sessions": {
+        "title": "Séances",
+        "desc": "À venir, passées et manquées — avec checklist de connexion.",
+        "stat": "Heure Algérie"
+      },
+      "payments": {
+        "title": "Paiements",
+        "desc": "Consultation, abonnement, portefeuille et factures.",
+        "stat": "DZD"
+      }
+    }
+  },
+  "patientMessages": {
+    "crisisBanner": {
+      "title": "Les messages ne sont pas pour les urgences",
+      "body": "En danger ou besoin d’aide immédiate : utilisez les ressources de crise ou Parler maintenant.",
+      "crisis": "Aide de crise",
+      "talkNow": "Parler maintenant"
+    }
+  },
+  "patientTalkNow": {
+    "title": "Parler maintenant",
+    "subtitle": "Demandez un praticien disponible. Champs minimum — complétez le profil après si besoin.",
+    "triage": {
+      "title": "Triage urgent",
+      "intro": "Confirmez votre lieu, téléphone, contrôle de sécurité, langue et format.",
+      "wilaya": "Wilaya / lieu actuel",
+      "phone": "Numéro de téléphone",
+      "phoneConfirm": "Ce numéro peut recevoir un rappel",
+      "safetyTitle": "Questions de sécurité",
+      "safetyQ1": "Pensez-vous à vous faire du mal en ce moment ?",
+      "safetyQ2": "Êtes-vous en danger immédiat ou en situation dangereuse ?",
+      "safetyQ3": "Quelqu’un d’autre est-il en danger à cause de cette situation ?",
+      "yes": "Oui",
+      "no": "Non",
+      "riskHint": "Vous avez répondu oui à une question de sécurité. Vous pouvez toujours demander des soins — ouvrez aussi les ressources de crise.",
+      "crisisLink": "Page crise",
+      "language": "Langue préférée",
+      "langAr": "Arabe",
+      "langFr": "Français",
+      "langEn": "Anglais",
+      "format": "Format de séance",
+      "formatVideo": "Vidéo",
+      "formatAudio": "Audio",
+      "formatChat": "Chat",
+      "submit": "Trouver un praticien maintenant"
+    },
+    "waiting": {
+      "title": "Recherche d’un praticien",
+      "statusSearching": "Recherche",
+      "estimate": "Attente typique sous 15 minutes si la couverture le permet",
+      "elapsed": "Attente {seconds}s…",
+      "breathTitle": "Exercice de respiration",
+      "breathTip": "Inspirez 4 temps, retenez 4, expirez 6. Vous pouvez annuler ou passer à un rappel.",
+      "callback": "Passer à un rappel",
+      "earliest": "Réserver le créneau le plus tôt",
+      "cancel": "Annuler la demande",
+      "crisis": "Aide de crise",
+      "riskNote": "Vu vos réponses de sécurité, gardez les ressources de crise ouvertes."
+    },
+    "unmatched": {
+      "title": "Aucun praticien disponible pour l’instant",
+      "body": "La couverture peut être limitée. Choisissez une alternative.",
+      "callbackTitle": "Demander un rappel",
+      "callbackBody": "Nous appellerons le numéro confirmé dès qu’un praticien est libre.",
+      "callbackCta": "Demander un rappel",
+      "callbackConfirm": "Rappel demandé (démo).",
+      "slotTitle": "Réserver le créneau le plus tôt",
+      "slotBody": "Parcourez les praticiens vérifiés et prenez le prochain créneau.",
+      "slotCta": "Ouvrir la réservation",
+      "crisisTitle": "Ressources de crise",
+      "crisisBody": "Si vous êtes en danger, utilisez les contacts d’urgence locaux.",
+      "crisisCta": "Ouvrir la page crise",
+      "retry": "Refaire le triage"
+    }
+  },
+  "patientSessions": {
+    "title": "Séances",
+    "subtitle": "À venir, passées et manquées — préparez-vous avec la checklist.",
+    "tabs": {
+      "upcoming": "À venir",
+      "past": "Passées",
+      "missed": "Manquées"
+    },
+    "empty": {
+      "upcoming": "Aucune séance à venir.",
+      "past": "Aucune séance passée.",
+      "missed": "Aucune séance manquée."
+    },
+    "join": "Rejoindre",
+    "rebook": "Reprendre RDV",
+    "format": {
+      "video": "Vidéo",
+      "audio": "Audio",
+      "chat": "Chat"
+    },
+    "status": {
+      "upcoming": "À venir",
+      "past": "Terminée",
+      "missed": "Manquée"
+    },
+    "checklist": {
+      "title": "Checklist avant séance",
+      "intro": "Testez l’appareil, confirmez un lieu privé, activez le mode discret si besoin.",
+      "open": "Ouvrir la checklist",
+      "device": "Test appareil",
+      "deviceTip": "Vérifiez caméra/micro ou audio, préférez le Wi‑Fi. Faible débit ? Passez en audio.",
+      "location": "Confirmation du lieu",
+      "locationTip": "Vous êtes dans un endroit calme et privé pour la durée de la séance.",
+      "discreet": "Mode discret",
+      "discreetTip": "Masquer les détails sur l’écran de verrouillage et utiliser des notifications neutres.",
+      "join": "Entrer en salle d’attente (démo)",
+      "joinDemo": "Salle d’attente prête (démo). La vidéo live arrivera plus tard."
+    }
+  },
+  "patientPayments": {
+    "title": "Paiements",
+    "subtitle": "Consultation à l’unité, abonnement, portefeuille et factures.",
+    "plans": {
+      "consultTitle": "Consultation unique",
+      "consultBody": "Une séance planifiée ou à la demande avec un praticien vérifié.",
+      "consultCta": "Payer 500 DZD (démo)",
+      "subTitle": "Abonnement mensuel",
+      "perMonth": "Par mois",
+      "subBody": "Inclut un forfait de demandes et un compteur de minutes urgentes.",
+      "subCta": "S’abonner 1000 DZD (démo)"
+    },
+    "wallet": {
+      "title": "Portefeuille",
+      "balance": "{amount} DZD",
+      "hint": "Rechargez pour les consultations et retenues urgentes. PeSSiLi ne stocke pas les numéros de carte.",
+      "topUp": "Recharger (démo)"
+    },
+    "meter": {
+      "title": "Compteur d’usage",
+      "requests": "Demandes médecin restantes",
+      "minutes": "Minutes urgentes du jour restantes"
+    },
+    "invoices": {
+      "title": "Factures",
+      "status": {
+        "paid": "Payée",
+        "refunded": "Remboursée",
+        "pending": "En attente"
+      }
+    }
+  },
+  "patientSettings": {
+    "title": "Paramètres & confidentialité",
+    "subtitle": "Langue, mode discret, contact d’urgence, appareils et données.",
+    "language": {
+      "title": "Préférences de langue",
+      "body": "Utilisez le sélecteur d’en-tête pour arabe, français ou anglais. La langue de séance peut différer."
+    },
+    "discreet": {
+      "title": "Mode discret",
+      "toggle": "Activer les notifications discrètes",
+      "hint": "Formulation neutre sur l’écran de verrouillage ; masquer les noms des praticiens.",
+      "on": "Mode discret activé sur cet appareil (démo)."
+    },
+    "emergency": {
+      "title": "Contact de confiance / urgence",
+      "name": "Nom",
+      "relation": "Lien",
+      "phone": "Téléphone",
+      "save": "Enregistrer",
+      "saved": "Contact d’urgence enregistré (démo)."
+    },
+    "appLock": {
+      "title": "Verrouillage de l’app",
+      "body": "Un PIN ou biométrie protégera la réouverture de l’espace patient. Note démo pour l’instant."
+    },
+    "consent": {
+      "title": "Historique des consentements",
+      "items": {
+        "healthData": "Consentement données de santé",
+        "terms": "Conditions & confidentialité",
+        "crisisContact": "Usage crise du contact d’urgence"
+      }
+    },
+    "devices": {
+      "title": "Appareils connectés",
+      "lastActive": "Dernière activité · {when}",
+      "current": "Cet appareil",
+      "logout": "Déconnecter",
+      "loggedOut": "Déconnexion distante enregistrée (démo)."
+    },
+    "data": {
+      "title": "Vos données",
+      "body": "Exportez une copie ou demandez la suppression (sous réserve de conservation légale).",
+      "export": "Exporter mes données",
+      "delete": "Demander la suppression",
+      "exportConfirm": "Préparer un export pour ce compte démo ?",
+      "exportDone": "Export mis en file (démo).",
+      "deleteConfirm": "Demander la suppression du compte ? Confirmation démo uniquement.",
+      "deleteDone": "Demande de suppression enregistrée (démo)."
+    },
+    "profileLink": {
+      "prefix": "Pour l’identité complète et le QR, ouvrez",
+      "cta": "Mon profil"
+    }
+  },
+  "patientGuardian": {
+    "title": "Mode tuteur",
+    "subtitle": "Gérez réservations et paiements des dépendants dans les limites de consentement.",
+    "visibilityNote": "Par défaut : planning et factures seulement. Le contenu clinique apparaît si le consentement le permet.",
+    "ageBand": {
+      "minor": "Mineur",
+      "adult": "Adulte"
+    },
+    "consent": {
+      "guardian": "Consentement tuteur",
+      "invited": "Invité par l’adulte"
+    },
+    "nextSession": "Prochaine séance · {when}",
+    "noSession": "Pas de séance à venir",
+    "cta": {
+      "book": "Réserver",
+      "pay": "Payer",
+      "urgent": "Aide urgente"
+    }
+  },
+  "patientScreening": {
+    "title": "Centre de dépistage",
+    "body": "Outils validés avec score automatique. Le dépistage n’est pas un diagnostic.",
+    "phq": "Dépression (PHQ-9)",
+    "gad": "Anxiété (GAD-7)",
+    "soon": "Prêt",
+    "backToList": "← Tous les outils",
+    "duration": "~{min} min",
+    "progress": "Question {current} sur {total}",
+    "likertHint": "Au cours des 2 dernières semaines, à quelle fréquence avez-vous été gêné(e) par ceci ?",
+    "back": "Précédent",
+    "saveResume": "Enregistrer et quitter",
+    "likert": {
+      "0": "Jamais",
+      "1": "Plusieurs jours",
+      "2": "Plus de la moitié des jours",
+      "3": "Presque tous les jours"
+    },
+    "tools": {
+      "phq9": {
+        "name": "PHQ-9",
+        "desc": "Dépistage dépression — 9 questions, score automatique."
+      },
+      "gad7": {
+        "name": "GAD-7",
+        "desc": "Dépistage anxiété — 7 questions, score automatique."
+      }
+    },
+    "questions": {
+      "phq9": {
+        "q1": "Peu d’intérêt ou de plaisir à faire les choses",
+        "q2": "Vous sentir triste, déprimé(e) ou désespéré(e)",
+        "q3": "Difficultés à vous endormir, à rester endormi(e), ou trop dormir",
+        "q4": "Se sentir fatigué(e) ou manquer d’énergie",
+        "q5": "Peu d’appétit ou trop manger",
+        "q6": "Mauvaise opinion de vous-même — ou sentiment d’échec ou d’avoir déçu votre famille",
+        "q7": "Difficultés à se concentrer (lecture, télévision…)",
+        "q8": "Bouger ou parler si lentement que d’autres l’ont remarqué — ou au contraire être agité(e)",
+        "q9": "Pensées que vous seriez mieux mort(e), ou de vous faire du mal d’une façon ou d’une autre"
+      },
+      "gad7": {
+        "q1": "Se sentir nerveux(se), anxieux(se) ou à cran",
+        "q2": "Ne pas pouvoir arrêter ou contrôler les inquiétudes",
+        "q3": "Trop s’inquiéter pour différentes choses",
+        "q4": "Difficultés à se détendre",
+        "q5": "Être si agité(e) qu’il est dur de rester assis(e)",
+        "q6": "Devenir facilement ennuyé(e) ou irritable",
+        "q7": "Avoir peur que quelque chose de terrible arrive"
+      }
+    },
+    "bands": {
+      "minimal": "Minimal",
+      "mild": "Léger",
+      "moderate": "Modéré",
+      "moderatelySevere": "Modérément sévère",
+      "severe": "Sévère"
+    },
+    "guidance": {
+      "minimal": "Peu de symptômes actuellement. Re-dépistez si cela change, ou consultez si vous souhaitez du soutien.",
+      "mild": "Symptômes légers. Surveillance et soins personnels ; un praticien peut guider la suite.",
+      "moderate": "Symptômes modérés. Envisagez une réservation ou Parler maintenant.",
+      "moderatelySevere": "Symptômes modérément sévères. Nous recommandons de parler bientôt à un praticien.",
+      "severe": "Plage sévère. Demandez un soutien clinique — Parler maintenant ou réservez."
+    },
+    "risk": {
+      "title": "Soutien de sécurité d’abord",
+      "body": "Une réponse suggère des pensées d’automutilation. Consultez les ressources de crise avant le score.",
+      "crisisCta": "Ouvrir l’aide de crise",
+      "talkNow": "Parler maintenant",
+      "continueScore": "Voir mon score"
+    },
+    "result": {
+      "title": "Votre résultat",
+      "score": "Score {score} / {max}",
+      "disclaimer": "Résultat de dépistage, pas un diagnostic médical.",
+      "riskNote": "Item d’automutilation signalé. Gardez les contacts de crise à portée.",
+      "book": "Parler à un praticien",
+      "talkNow": "Parler maintenant",
+      "retake": "Refaire"
+    },
+    "history": {
+      "title": "Historique & tendances",
+      "empty": "Aucun résultat enregistré sur cet appareil. Complétez un outil pour voir les scores.",
+      "hint": "Vous pourrez partager un résultat avec votre praticien et exporter un PDF."
+    }
+  }
+}

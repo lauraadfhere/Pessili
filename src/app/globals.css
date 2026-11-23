@@ -9,8 +9,10 @@
   --color-chrome-button: #5c5c5c;
   --color-subnav: #333333;
   --color-subnav-active: #4f4f4f;
-  --color-hero: #707070;
-  --color-hero-shape: #8a8a8a;
+  --color-brand: #007e94;
+  --color-brand-dark: #005f70;
+  --color-hero: #007e94;
+  --color-hero-shape: #0099b3;
 
   --color-panel: #f2f2f2;
   --color-panel-head: #e8e8e8;
@@ -18,10 +20,10 @@
   --color-text: #333333;
   --color-muted: #6b6b6b;
 
-  --color-link: #1a6fb0;
-  --color-link-hover: #0f4f82;
+  --color-link: #007e94;
+  --color-link-hover: #005f70;
   --color-new: #c8102e;
-  --color-feedback: #1b75bb;
+  --color-feedback: #007e94;
   --color-edition: #5fb236;
   --color-upgrade-from: #c4122f;
   --color-upgrade-to: #e8336d;
@@ -39,6 +41,13 @@
 :root {
   --sticky-site-header: 6rem;
   --sticky-subnav-top: 3rem;
+  --sticky-patient-chrome: 3.75rem;
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --sticky-patient-chrome: 3.875rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -64,4 +73,27 @@ body {
 :focus-visible {
   outline: 2px solid var(--color-link);
   outline-offset: 2px;
+}
+
+@keyframes loader-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-pulse {
+  50% {
+    opacity: 0.35;
+  }
+}
+
+.loader-spin {
+  transform-origin: 50% 50%;
+  animation: loader-spin 1s steps(10, end) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .loader-spin {
+    animation: loader-pulse 1.6s ease-in-out infinite;
+  }
 }

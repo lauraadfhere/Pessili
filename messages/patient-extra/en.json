@@ -1,0 +1,324 @@
+{
+  "patientNav": {
+    "talkNow": "Talk now",
+    "sessions": "Sessions",
+    "payments": "Payments",
+    "guardian": "Guardian",
+    "settings": "Settings"
+  },
+  "patientDashboard": {
+    "cards": {
+      "talkNow": {
+        "title": "Talk to someone now",
+        "desc": "Urgent triage for a clinician available on demand.",
+        "stat": "Minutes"
+      },
+      "sessions": {
+        "title": "Sessions",
+        "desc": "Upcoming, past and missed appointments with join checklist.",
+        "stat": "Algeria time"
+      },
+      "payments": {
+        "title": "Payments",
+        "desc": "Consult fee, subscription, wallet and invoices.",
+        "stat": "DZD"
+      }
+    }
+  },
+  "patientMessages": {
+    "crisisBanner": {
+      "title": "Messages are not for emergencies",
+      "body": "If you are in danger or need help right now, use crisis resources or Talk now.",
+      "crisis": "Crisis help",
+      "talkNow": "Talk now"
+    }
+  },
+  "patientTalkNow": {
+    "title": "Talk now",
+    "subtitle": "Request an available clinician. Minimum fields only — finish your profile after if needed.",
+    "triage": {
+      "title": "Urgent triage",
+      "intro": "Confirm where you are, your phone, a short safety check, language and format.",
+      "wilaya": "Current wilaya / location",
+      "phone": "Phone number",
+      "phoneConfirm": "This number can receive a callback",
+      "safetyTitle": "Safety questions",
+      "safetyQ1": "Are you thinking about harming yourself right now?",
+      "safetyQ2": "Are you in immediate danger or unsafe where you are?",
+      "safetyQ3": "Is someone else in danger because of this situation?",
+      "yes": "Yes",
+      "no": "No",
+      "riskHint": "You answered yes to a safety question. You can still request care — also open crisis resources.",
+      "crisisLink": "Crisis page",
+      "language": "Preferred language",
+      "langAr": "Arabic",
+      "langFr": "French",
+      "langEn": "English",
+      "format": "Session format",
+      "formatVideo": "Video",
+      "formatAudio": "Audio",
+      "formatChat": "Chat",
+      "submit": "Find a clinician now"
+    },
+    "waiting": {
+      "title": "Looking for a clinician",
+      "statusSearching": "Searching",
+      "estimate": "Typical wait under 15 minutes when coverage is available",
+      "elapsed": "Waiting {seconds}s…",
+      "breathTitle": "Breathing tip",
+      "breathTip": "Breathe in for 4 counts, hold 4, out for 6. You can cancel or switch to a callback anytime.",
+      "callback": "Change to callback",
+      "earliest": "Book earliest slot",
+      "cancel": "Cancel request",
+      "crisis": "Crisis help",
+      "riskNote": "Because of your safety answers, keep crisis resources open while you wait."
+    },
+    "unmatched": {
+      "title": "No clinician available right now",
+      "body": "Coverage can be limited. Choose a fallback so you are not left without options.",
+      "callbackTitle": "Request a callback",
+      "callbackBody": "We will call the number you confirmed when a clinician is free.",
+      "callbackCta": "Request callback",
+      "callbackConfirm": "Callback requested (demo).",
+      "slotTitle": "Book the earliest slot",
+      "slotBody": "Browse verified clinicians and take the soonest available appointment.",
+      "slotCta": "Open booking",
+      "crisisTitle": "Crisis resources",
+      "crisisBody": "If you are unsafe or in immediate distress, use local emergency and crisis contacts.",
+      "crisisCta": "Open crisis page",
+      "retry": "Try triage again"
+    }
+  },
+  "patientSessions": {
+    "title": "Sessions",
+    "subtitle": "Upcoming, past and missed visits — prepare with the join checklist.",
+    "tabs": {
+      "upcoming": "Upcoming",
+      "past": "Past",
+      "missed": "Missed"
+    },
+    "empty": {
+      "upcoming": "No upcoming sessions.",
+      "past": "No past sessions yet.",
+      "missed": "No missed sessions."
+    },
+    "join": "Join",
+    "rebook": "Rebook",
+    "format": {
+      "video": "Video",
+      "audio": "Audio",
+      "chat": "Chat"
+    },
+    "status": {
+      "upcoming": "Upcoming",
+      "past": "Completed",
+      "missed": "Missed"
+    },
+    "checklist": {
+      "title": "Pre-session checklist",
+      "intro": "Test your device, confirm a private place, and enable discreet mode if needed.",
+      "open": "Open checklist",
+      "device": "Device test",
+      "deviceTip": "Check camera/mic or audio, and prefer Wi‑Fi. Low bandwidth? Switch to audio.",
+      "location": "Location confirmation",
+      "locationTip": "You are somewhere quiet and private for the session length.",
+      "discreet": "Discreet mode",
+      "discreetTip": "Hide session details on lock screen and use neutral notification wording.",
+      "join": "Enter waiting room (demo)",
+      "joinDemo": "Waiting room ready (demo). Live video room connects in a later release."
+    }
+  },
+  "patientPayments": {
+    "title": "Payments",
+    "subtitle": "Pay per consultation, manage subscription, wallet and invoices.",
+    "plans": {
+      "consultTitle": "Single consultation",
+      "consultBody": "One scheduled or on-demand session with a verified clinician.",
+      "consultCta": "Pay 500 DZD (demo)",
+      "subTitle": "Monthly subscription",
+      "perMonth": "Per month",
+      "subBody": "Includes request allowance and daily urgent minutes meter.",
+      "subCta": "Subscribe 1000 DZD (demo)"
+    },
+    "wallet": {
+      "title": "Wallet",
+      "balance": "{amount} DZD",
+      "hint": "Top up for consults and urgent holds. Card numbers are never stored by PeSSiLi.",
+      "topUp": "Top up (demo)"
+    },
+    "meter": {
+      "title": "Usage meter",
+      "requests": "Doctor requests left",
+      "minutes": "Daily urgent minutes left"
+    },
+    "invoices": {
+      "title": "Invoices",
+      "status": {
+        "paid": "Paid",
+        "refunded": "Refunded",
+        "pending": "Pending"
+      }
+    }
+  },
+  "patientSettings": {
+    "title": "Settings & privacy",
+    "subtitle": "Language, discreet mode, emergency contact, devices and data controls.",
+    "language": {
+      "title": "Language preferences",
+      "body": "Use the header language switch for Arabic, French or English. Session language can differ from the interface."
+    },
+    "discreet": {
+      "title": "Discreet mode",
+      "toggle": "Enable discreet notifications",
+      "hint": "Neutral wording on lock screen; hide clinician names in banners.",
+      "on": "Discreet mode is on for this device (demo)."
+    },
+    "emergency": {
+      "title": "Trusted / emergency contact",
+      "name": "Name",
+      "relation": "Relationship",
+      "phone": "Phone",
+      "save": "Save contact",
+      "saved": "Emergency contact saved (demo)."
+    },
+    "appLock": {
+      "title": "App lock",
+      "body": "PIN or biometric lock will protect re-opening the patient space on shared devices. Demo note only for now."
+    },
+    "consent": {
+      "title": "Consent history",
+      "items": {
+        "healthData": "Health data processing consent",
+        "terms": "Terms of use & privacy",
+        "crisisContact": "Crisis use of emergency contact"
+      }
+    },
+    "devices": {
+      "title": "Connected devices",
+      "lastActive": "Last active · {when}",
+      "current": "This device",
+      "logout": "Log out",
+      "loggedOut": "Remote logout recorded (demo)."
+    },
+    "data": {
+      "title": "Your data",
+      "body": "Export a copy of your account data or request deletion (subject to legal retention).",
+      "export": "Export my data",
+      "delete": "Request deletion",
+      "exportConfirm": "Prepare a data export for this demo account?",
+      "exportDone": "Export queued (demo).",
+      "deleteConfirm": "Request account deletion? This is a demo confirmation only.",
+      "deleteDone": "Deletion request recorded (demo)."
+    },
+    "profileLink": {
+      "prefix": "For full identity and QR sign-in, open",
+      "cta": "My profile"
+    }
+  },
+  "patientGuardian": {
+    "title": "Guardian mode",
+    "subtitle": "Manage bookings and payments for dependents within consent limits.",
+    "visibilityNote": "By default you see schedule and invoices only. Clinical content appears only when consent allows.",
+    "ageBand": {
+      "minor": "Minor",
+      "adult": "Adult"
+    },
+    "consent": {
+      "guardian": "Guardian consent",
+      "invited": "Invited by adult"
+    },
+    "nextSession": "Next session · {when}",
+    "noSession": "No upcoming session",
+    "cta": {
+      "book": "Book",
+      "pay": "Pay",
+      "urgent": "Urgent help"
+    }
+  },
+  "patientScreening": {
+    "title": "Screening centre",
+    "body": "Validated tools with automatic scoring. Screening is not a diagnosis.",
+    "phq": "Depression (PHQ-9)",
+    "gad": "Anxiety (GAD-7)",
+    "soon": "Ready",
+    "backToList": "← All tools",
+    "duration": "~{min} min",
+    "progress": "Question {current} of {total}",
+    "likertHint": "Over the last 2 weeks, how often have you been bothered by this?",
+    "back": "Previous",
+    "saveResume": "Save & exit",
+    "likert": {
+      "0": "Not at all",
+      "1": "Several days",
+      "2": "More than half the days",
+      "3": "Nearly every day"
+    },
+    "tools": {
+      "phq9": {
+        "name": "PHQ-9",
+        "desc": "Depression screening — 9 questions, scored automatically."
+      },
+      "gad7": {
+        "name": "GAD-7",
+        "desc": "Anxiety screening — 7 questions, scored automatically."
+      }
+    },
+    "questions": {
+      "phq9": {
+        "q1": "Little interest or pleasure in doing things",
+        "q2": "Feeling down, depressed, or hopeless",
+        "q3": "Trouble falling or staying asleep, or sleeping too much",
+        "q4": "Feeling tired or having little energy",
+        "q5": "Poor appetite or overeating",
+        "q6": "Feeling bad about yourself — or that you are a failure or have let yourself or your family down",
+        "q7": "Trouble concentrating on things, such as reading the newspaper or watching television",
+        "q8": "Moving or speaking so slowly that other people could have noticed — or the opposite, being so fidgety or restless that you have been moving around a lot more than usual",
+        "q9": "Thoughts that you would be better off dead, or of hurting yourself in some way"
+      },
+      "gad7": {
+        "q1": "Feeling nervous, anxious, or on edge",
+        "q2": "Not being able to stop or control worrying",
+        "q3": "Worrying too much about different things",
+        "q4": "Trouble relaxing",
+        "q5": "Being so restless that it is hard to sit still",
+        "q6": "Becoming easily annoyed or irritable",
+        "q7": "Feeling afraid as if something awful might happen"
+      }
+    },
+    "bands": {
+      "minimal": "Minimal",
+      "mild": "Mild",
+      "moderate": "Moderate",
+      "moderatelySevere": "Moderately severe",
+      "severe": "Severe"
+    },
+    "guidance": {
+      "minimal": "Your answers suggest few symptoms right now. Re-screen if things change, or talk to a clinician if you still want support.",
+      "mild": "Mild symptoms. Monitoring and self-care may help; a clinician can guide next steps.",
+      "moderate": "Moderate symptoms. Consider booking a clinician or using Talk now.",
+      "moderatelySevere": "Moderately severe symptoms. We recommend speaking with a clinician soon.",
+      "severe": "Severe symptom range. Please seek clinical support — Talk now or book a session."
+    },
+    "risk": {
+      "title": "Safety support first",
+      "body": "One of your answers suggests thoughts of self-harm. Please review crisis resources before viewing your score.",
+      "crisisCta": "Open crisis help",
+      "talkNow": "Talk now",
+      "continueScore": "Continue to my score"
+    },
+    "result": {
+      "title": "Your result",
+      "score": "Score {score} / {max}",
+      "disclaimer": "This is a screening result, not a medical diagnosis.",
+      "riskNote": "You flagged a self-harm item. Keep crisis contacts available.",
+      "book": "Talk to a clinician",
+      "talkNow": "Talk now",
+      "retake": "Retake"
+    },
+    "history": {
+      "title": "History & trends",
+      "empty": "No saved results on this device yet. Complete a tool to see scores here.",
+      "hint": "You will be able to share a result with your clinician and export a PDF."
+    }
+  }
+}

@@ -9,7 +9,104 @@
   },
   "auth": {
     "signIn": "Connexion",
-    "register": "Inscription"
+    "register": "Inscription",
+    "signOut": "Déconnexion"
+  },
+  "loading": "Chargement…",
+  "feedback": "Avis",
+  "language": "Langue",
+  "breadcrumb": {
+    "home": "Accueil"
+  },
+  "scroll": {
+    "top": "Haut de page",
+    "bottom": "Bas de page"
+  },
+  "cookies": {
+    "title": "Nous utilisons des cookies.",
+    "body": "Ils assurent la connexion, la langue et vos préférences. Vous pouvez refuser les cookies optionnels ou tout accepter, et modifier ce choix plus tard.",
+    "reject": "Refuser",
+    "settings": "Paramètres",
+    "acceptAll": "Tout accepter",
+    "termsLink": "Conditions",
+    "privacyLink": "Confidentialité",
+    "closeOverlay": "Fermer",
+    "openSettings": "Cookies"
+  },
+  "login": {
+    "heroTitle": "Connexion",
+    "panelTitle": "Compte PeSSiLi",
+    "formHeading": "Identifiants",
+    "email": "E-mail",
+    "emailPlaceholder": "vous@exemple.dz",
+    "password": "Mot de passe",
+    "submit": "Se connecter",
+    "submitting": "Connexion…",
+    "genericError": "E-mail ou mot de passe incorrect.",
+    "asideTitle": "Accès démo",
+    "asideBody": "Utilisez l’icône ℹ️ pour afficher les comptes de démonstration patient, praticien et admin. Cette session est locale (cookie) en attendant Appwrite Auth.",
+    "demoToggle": "Voir les accès démo",
+    "demoTitle": "Comptes démo",
+    "demoHint": "Cliquez sur « Utiliser » pour remplir le formulaire.",
+    "demoUse": "Utiliser",
+    "demoRoles": {
+      "patient": "Patient",
+      "doctor": "Praticien",
+      "admin": "Administrateur"
+    }
+  },
+  "dashboard": {
+    "title": "Tableau de bord",
+    "breadcrumb": "Tableau de bord",
+    "welcome": "Connecté en tant que {role}",
+    "body": "Espace de démonstration. Branchez Appwrite Auth pour remplacer cette session par des comptes réels.",
+    "roles": {
+      "patient": "patient",
+      "doctor": "praticien",
+      "admin": "administrateur"
+    },
+    "marksTitle": "Soumettre une note clinique",
+    "marksBody": "Saisissez l’e-mail ou le n° patient et une note (1–10). Un résumé IA est envoyé aux notifications du patient.",
+    "cloudUploadTitle": "Envoyer PDF / image patient",
+    "cloudUploadBody": "Stockage Cloudinary (authentifié). Le patient ouvre dans le navigateur avec son n° PeSSiLi."
+  },
+  "doctorDocuments": {
+    "patientEmail": "E-mail patient",
+    "patientSerial": "N° patient PeSSiLi",
+    "title": "Titre du document",
+    "file": "PDF ou image",
+    "upload": "Envoyer sur Cloudinary",
+    "uploading": "Envoi…",
+    "saved": "Enregistré — le patient ouvre avec son code.",
+    "error": "Échec de l’envoi"
+  },
+  "doctorMarks": {
+    "patientEmail": "E-mail patient",
+    "patientSerial": "N° patient (vérif.)",
+    "score": "Note / {max}",
+    "note": "Note clinique",
+    "submit": "Envoyer la note",
+    "saving": "Envoi…",
+    "saved": "Note transmise au patient.",
+    "error": "Échec de l’envoi."
+  },
+  "patientMarks": {
+    "title": "Notes praticien & IA",
+    "empty": "Aucune note pour le moment."
+  },
+  "feedbackPage": {
+    "title": "Vos retours",
+    "breadcrumb": "Avis",
+    "panelTitle": "Nous écrire",
+    "body": "Formulaire de retour à venir. En attendant, écrivez à contact@pessili.dz."
+  },
+  "legal": {
+    "privacyTitle": "Confidentialité",
+    "privacyBreadcrumb": "Confidentialité",
+    "privacyBody": "Notice provisoire — conformité Loi 18-07 et consentement santé à finaliser avec votre conseil juridique.",
+    "termsTitle": "Conditions d’utilisation",
+    "termsBreadcrumb": "Conditions",
+    "termsBody": "Texte provisoire pour le lancement pilote PeSSiLi."
   },
   "cta": {
     "consultNow": "Consulter maintenant"
@@ -56,13 +153,253 @@
   "doctors": {
     "title": "Psychologues & psychiatres",
     "breadcrumb": "Praticiens",
-    "comingTitle": "Annuaire bientôt disponible",
-    "comingBody": "Les profils vérifiés seront chargés depuis Appwrite (collection doctors). En attendant, inscrivez-vous comme praticien ou patient."
+    "searchResults": "Résultats pour « {query} »"
+  },
+  "howItWorks": {
+    "title": "Comment ça marche",
+    "breadcrumb": "Parcours",
+    "stepsTitle": "Parcours patient",
+    "step1": "Inscription (e-mail ou téléphone OTP) et choix de la wilaya.",
+    "step2": "Questionnaires de dépistage (scores automatiques).",
+    "step3": "Mise en relation avec un psychologue ou psychiatre.",
+    "step4": "Consultation vidéo, audio ou chat.",
+    "step5": "Compte rendu, paiement et rappels de suivi."
+  },
+  "pricing": {
+    "title": "Tarifs",
+    "breadcrumb": "Tarifs",
+    "panelTitle": "Tarification locale",
+    "body": "Les honoraires sont fixés par chaque praticien vérifié (DZD). Une première séance à tarif réduit pourra être proposée lors du lancement pilote."
+  },
+  "crisis": {
+    "title": "Aide d'urgence",
+    "breadcrumb": "Urgence",
+    "urgentTitle": "Si vous êtes en danger immédiat",
+    "urgentBody": "Contactez les services d'urgence officiels de votre wilaya. PeSSiLi n'est pas un service d'urgence mais peut afficher les numéros locaux après validation juridique.",
+    "disclaimerTitle": "Avertissement",
+    "disclaimerBody": "Les questionnaires signalent un risque possible ; seul un professionnel peut évaluer la situation."
+  },
+  "authPages": {
+    "loginTitle": "Connexion",
+    "loginBreadcrumb": "Connexion",
+    "loginPanel": "Authentification Appwrite",
+    "loginBody": "La connexion patient / praticien (e-mail, téléphone OTP, rôles) sera branchée sur Appwrite Auth dans la prochaine itération du MVP.",
+    "registerTitle": "Inscription",
+    "registerBreadcrumb": "Inscription",
+    "registerPanel": "Créer un compte",
+    "registerBody": "Choix du rôle patient ou praticien, wilaya et langue préférée — stockés dans la collection profiles."
   },
   "about": {
     "title": "À propos de PeSSiLi",
     "breadcrumb": "À propos",
     "missionTitle": "Mission",
     "missionBody": "Rendre une première évaluation psychologique ou psychiatrique accessible à toute personne en Algérie, avec confidentialité, respect culturel et continuité des soins."
+  },
+  "patientNav": {
+    "label": "Espace patient",
+    "greeting": "Bonjour, {name}",
+    "dashboard": "Tableau de bord",
+    "talkNow": "Parler maintenant",
+    "profile": "Profil",
+    "screening": "Dépistage",
+    "sessions": "Séances",
+    "records": "Dossier",
+    "cases": "Mes dossiers",
+    "booking": "Consultation",
+    "messages": "Messages",
+    "payments": "Paiements",
+    "guardian": "Tuteur",
+    "settings": "Paramètres",
+    "crisis": "Urgence",
+    "publicSite": "Site public",
+    "search": "Rechercher",
+    "searchPlaceholder": "Nom, wilaya, langue…",
+    "searchSubmit": "Lancer la recherche",
+    "notifications": "Notifications",
+    "notificationsEmpty": "Aucune notification pour le moment.",
+    "welcomeNotifTitle": "Bienvenue sur PeSSiLi",
+    "welcomeNotifBody": "Complétez votre profil et parcourez les praticiens vérifiés.",
+    "viewCases": "Voir mes cas",
+    "viewMessages": "Centre de messages",
+    "aiTitle": "Aperçu IA PeSSiLi",
+    "moreMenu": "Plus d’options",
+    "myProfile": "Mon profil"
+  },
+  "patientDashboard": {
+    "eyebrow": "Espace patient · Algérie",
+    "title": "Votre parcours santé mentale",
+    "subtitle": "Consultation à distance, questionnaires validés et suivi dans les 69 wilayas.",
+    "journeyTitle": "Parcours type",
+    "journey": {
+      "step1": "Complétez votre profil et votre wilaya.",
+      "step2": "Passez le dépistage PHQ-9 / GAD-7 (arabe ou français).",
+      "step3": "Réservez ou consultez un praticien vérifié.",
+      "step4": "Recevez rapport, plan de soins et rappels."
+    },
+    "cards": {
+      "open": "Ouvrir",
+      "talkNow": { "title": "Parler à quelqu’un maintenant", "desc": "Triage urgent pour un praticien disponible à la demande.", "stat": "Minutes" },
+      "sessions": { "title": "Séances", "desc": "À venir, passées et manquées — avec checklist de connexion.", "stat": "Heure Algérie" },
+      "payments": { "title": "Paiements", "desc": "Consultation, abonnement, portefeuille et factures.", "stat": "DZD" },
+      "consult": { "title": "Consultation", "desc": "Vidéo, audio ou chat — maintenant ou sur rendez-vous.", "stat": "24–48 h" },
+      "screening": { "title": "Questionnaires", "desc": "PHQ-9, GAD-7 et scores automatiques.", "stat": "15 min" },
+      "cases": {
+        "title": "Dossiers & cas",
+        "desc": "Soumettez votre situation, suivez le statut et les pièces jointes en temps réel.",
+        "stat": "Suivi actif",
+        "openCount": "{count} en cours"
+      },
+      "serial": { "title": "N° patient", "desc": "Communiquez ce numéro à votre médecin lors de chaque échange." },
+      "messages": { "title": "Messages", "desc": "Canal sécurisé lorsqu’un praticien vous contacte.", "stat": "Aucun non lu", "unread": "{count} non lu(s)" },
+      "records": { "title": "Dossier PDF", "desc": "Comptes rendus, ordonnances et synthèses téléchargeables.", "stat": "PDF chiffrés" }
+    }
+  },
+  "patientCases": {
+    "pageTitle": "Mes cas & documents",
+    "pageSubtitle": "Suivi en direct de vos demandes et mises à jour de dossier.",
+    "newPageTitle": "Soumettre un cas",
+    "newPageSubtitle": "Décrivez votre situation ; notre équipe la prendra en charge après réception.",
+    "trackerTitle": "Suivi des cas",
+    "formTitle": "Nouvelle demande",
+    "caseTitle": "Titre du cas",
+    "caseTitlePlaceholder": "Ex. anxiété persistante, besoin d’évaluation",
+    "caseBody": "Détails",
+    "caseBodyPlaceholder": "Symptômes, contexte, documents déjà disponibles…",
+    "submit": "Envoyer le cas",
+    "submitting": "Envoi…",
+    "submitError": "Impossible d’enregistrer le cas.",
+    "loading": "Chargement du suivi…",
+    "empty": "Aucun cas pour le moment. Soumettez une demande pour démarrer le suivi.",
+    "newCase": "Nouveau cas",
+    "tracking": "Suivi",
+    "liveOn": "Temps réel",
+    "livePoll": "Actualisation automatique",
+    "lastSync": "Dernière synchro",
+    "updated": "Mis à jour",
+    "timeline": "Progression du cas",
+    "status": {
+      "submitted": "Reçu",
+      "triage": "Tri",
+      "assigned": "Assigné",
+      "in_consultation": "En consultation",
+      "report_ready": "Rapport prêt",
+      "closed": "Clôturé"
+    },
+    "editor": {
+      "bold": "Gras",
+      "italic": "Italique",
+      "underline": "Souligné",
+      "list": "Liste",
+      "hint": "Mise en forme simple — texte stocké de façon sécurisée."
+    }
+  },
+  "patientProfile": {
+    "pageTitle": "Mon profil",
+    "pageSubtitle": "Avatar, numéro patient, antécédents et connexion rapide par QR.",
+    "identitySection": "Identité",
+    "serialTitle": "Numéro patient PeSSiLi",
+    "serialHint": "Copiez-collez ce numéro quand vous parlez à un médecin (téléphone, chat ou consultation).",
+    "serialCopy": "Copier",
+    "serialCopied": "Copié",
+    "formSection": "Informations personnelles",
+    "qrSection": "Connexion rapide (QR)",
+    "fullName": "Nom complet",
+    "nickname": "Pseudo (optionnel)",
+    "phone": "Téléphone",
+    "birthYear": "Année de naissance",
+    "wilaya": "Wilaya",
+    "wilayaPlaceholder": "Choisir…",
+    "conditions": "Maladies / suivis connus",
+    "conditionsHint": "Séparez par des virgules (ex. diabète, hypertension).",
+    "medicalHistory": "Historique médical & psychologique",
+    "medicalHistoryPlaceholder": "Antécédents, traitements en cours, hospitalisations…",
+    "gender": "Genre (optionnel)",
+    "avatarUrl": "URL de l’avatar",
+    "save": "Enregistrer le profil",
+    "saving": "Enregistrement…",
+    "saved": "Profil enregistré dans Appwrite.",
+    "saveError": "Enregistrement impossible.",
+    "qrTitle": "QR de connexion sécurisée",
+    "qrBody": "Scannez depuis votre téléphone pour vous reconnecter sans retaper le mot de passe (démo).",
+    "qrPending": "Enregistrez votre profil pour générer un QR.",
+    "qrLoading": "Génération…",
+    "qrFull": "QR complet sur le profil"
+  },
+  "patientScreening": { "title": "Dépistage", "body": "Outils validés en arabe et français — bientôt reliés aux tables questionnaires.", "phq": "Dépression (PHQ-9)", "gad": "Anxiété (GAD-7)", "soon": "Bientôt" },
+  "patientMessages": {
+    "pageTitle": "Messages",
+    "pageSubtitle": "Échanges avec les praticiens qui vous contactent.",
+    "inboxTitle": "Centre de messages",
+    "inboxHint": "Les messages du médecin apparaissent ici en temps réel. Répondez pour confirmer un créneau ou poser une question.",
+    "crisisBanner": {
+      "title": "Les messages ne sont pas pour les urgences",
+      "body": "En danger ou besoin d’aide immédiate : utilisez les ressources de crise ou Parler maintenant.",
+      "crisis": "Aide de crise",
+      "talkNow": "Parler maintenant"
+    },
+    "loading": "Chargement…",
+    "empty": "Aucun message pour le moment.",
+    "you": "Vous",
+    "replyLabel": "Votre réponse",
+    "replyPlaceholder": "Écrire au praticien…",
+    "send": "Envoyer",
+    "sending": "Envoi…"
+  },
+  "patientRecords": {
+    "title": "Dossier",
+    "subtitle": "Historique et documents PDF de vos consultations.",
+    "historyTitle": "Historique médical",
+    "empty": "Complétez votre profil pour stocker votre historique.",
+    "pdfTitle": "Documents PDF",
+    "pdfHint": "Saisissez votre n° patient PeSSiLi pour ouvrir chaque PDF.",
+    "cloudTitle": "Documents cloud sécurisés",
+    "cloudHint": "Images et PDF des praticiens (Cloudinary). Code patient obligatoire.",
+    "cloudEmpty": "Aucun fichier cloud. Configurez Cloudinary puis demandez un envoi au praticien.",
+    "accessCodeLabel": "Code d'accès patient",
+    "accessCodeHint": "Même numéro que sur le profil (PSL-…).",
+    "accessCodeShort": "Code PSL",
+    "codeRequired": "Entrez votre code patient.",
+    "viewSecure": "Ouvrir",
+    "gate": {
+      "code_required": "Code requis.",
+      "code_mismatch": "Code incorrect.",
+      "sign_in_required": "Connectez-vous d'abord.",
+      "denied": "Accès refusé.",
+      "forbidden": "Interdit.",
+      "invalid_format": "Format invalide."
+    },
+    "pdfDownload": "Télécharger PDF",
+    "pdf": {
+      "summary": "Synthèse du dossier",
+      "consultReport": "Compte rendu de consultation",
+      "prescription": "Ordonnance"
+    }
+  },
+  "patientBooking": {
+    "title": "Réserver une consultation",
+    "body": "Tous les praticiens vérifiés, regroupés par spécialité.",
+    "findDoctor": "Voir les praticiens",
+    "searchResults": "Résultats pour « {query} »"
+  },
+  "patientDoctors": {
+    "directoryTitle": "Annuaire",
+    "empty": "Aucun praticien pour le moment.",
+    "noResults": "Aucun résultat. Essayez un autre mot-clé.",
+    "wilaya": "Wilaya {code}",
+    "verified": "Vérifié",
+    "price": "{amount} DA",
+    "onDemand": "Disponible maintenant",
+    "byAppointment": "Sur rendez-vous",
+    "rating": "Note {value}/5",
+    "categories": {
+      "psychologist": "Psychologues cliniciens",
+      "psychiatrist": "Psychiatres",
+      "child_psychologist": "Enfants & adolescents"
+    },
+    "categoryDesc": {
+      "psychologist": "Thérapie, TCC, accompagnement psychologique.",
+      "psychiatrist": "Évaluation médicale, traitements, téléconsultation.",
+      "child_psychologist": "Pédopsychologie et pédopsychiatrie."
+    }
   }
 }
